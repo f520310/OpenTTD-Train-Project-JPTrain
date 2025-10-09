@@ -423,8 +423,8 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_back_yespan_nagano_flipcheck, 
 default: spriteset_211_rev_back_sarm_nagano;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_back_yespan_shonan_flipcheck, vehicle_is_flipped) {
-1:spriteset_211_revflip_back_darm_shonan;
-default: spriteset_211_rev_back_darm_shonan;
+1:sw_211group_gfx_rev_211_revflip_back_shonan_year_pantograph;
+default: sw_211group_gfx_rev_211_rev_back_shonan_year_pantograph;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_back_nopan_shonan_flipcheck, vehicle_is_flipped) {
 1:spriteset_211_revflip_back_shonan;

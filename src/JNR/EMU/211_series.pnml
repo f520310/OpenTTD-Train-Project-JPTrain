@@ -34,22 +34,22 @@ switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_nagano_check, num_vehs_in_veh
 
 //211 Shonan
 switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_tk, position_in_vehid_chain%8){
-1:spriteset_211_mid_darm_shonan;
-6:spriteset_211_mid_darm_shonan;
+1:sw_211_gfx_year_mid_shonan_pantograph;
+6:sw_211_gfx_year_mid_shonan_pantograph;
 default: spriteset_211_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_tk_ddsd, position_in_vehid_chain){
-1:spriteset_211_mid_darm_shonan;
+1:sw_211_gfx_year_mid_shonan_pantograph;
 2:spriteset_211_mid_ddgrnew_shonan;
 3:spriteset_211_mid_sdgrcar_shonan;
-6:spriteset_211_mid_darm_shonan;
+6:sw_211_gfx_year_mid_shonan_pantograph;
 default: spriteset_211_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_tk_dddd, position_in_vehid_chain){
-1:spriteset_211_mid_darm_shonan;
+1:sw_211_gfx_year_mid_shonan_pantograph;
 2:spriteset_211_mid_ddgrnew_shonan;
 3:spriteset_211_mid_ddgrnew_shonan;
-6:spriteset_211_mid_darm_shonan;
+6:sw_211_gfx_year_mid_shonan_pantograph;
 default: spriteset_211_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_ty_ddsd, position_in_vehid_chain){
