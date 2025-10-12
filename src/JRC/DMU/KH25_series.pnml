@@ -35,12 +35,12 @@ switch(FEAT_TRAINS, SELF, sw_KH25_gfx_revflip_back_livery, [STORE_TEMP(position_
 0 : spriteset_KH25_revflip_back;
 }
 switch(FEAT_TRAINS, SELF, sw_KH25_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
-  1 : sw_KH25_gfx_rev_front_livery;
-  default : sw_KH25_gfx_revflip_front_livery;
+  1 : sw_KH25_gfx_revflip_front_livery;
+  default : sw_KH25_gfx_rev_front_livery;
 }
 switch(FEAT_TRAINS, SELF, sw_KH25_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
-  1 : sw_KH25_gfx_rev_back_livery;
-  default : sw_KH25_gfx_revflip_back_livery;
+  1 : sw_KH25_gfx_revflip_back_livery;
+  default : sw_KH25_gfx_rev_back_livery;
 }
 switch(FEAT_TRAINS, SELF, sw_KH25_gfx_rev_frontback_nomucars,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){

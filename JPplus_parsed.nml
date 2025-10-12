@@ -2090,8 +2090,8 @@ switch(0, SELF, sw_211group_gfx_rev_211_back_yespan_nagano_flipcheck, vehicle_is
 }
 
 switch(0, SELF, sw_211group_gfx_rev_211_back_yespan_shonan_flipcheck, vehicle_is_flipped) {
-	1: spriteset_211_revflip_back_darm_shonan;
-	default: spriteset_211_rev_back_darm_shonan;
+	1: sw_211group_gfx_rev_211_revflip_back_shonan_year_pantograph;
+	default: sw_211group_gfx_rev_211_rev_back_shonan_year_pantograph;
 }
 
 switch(0, SELF, sw_211group_gfx_rev_211_back_nopan_shonan_flipcheck, vehicle_is_flipped) {
@@ -42232,24 +42232,24 @@ switch(0, SELF, sw_211_gfx_pantograph_pos_nagano_check, num_vehs_in_vehid_chain)
 }
 
 switch(0, SELF, sw_211_gfx_pantograph_pos_shonan_tk, (position_in_vehid_chain % 8)) {
-	1: spriteset_211_mid_darm_shonan;
-	6: spriteset_211_mid_darm_shonan;
+	1: sw_211_gfx_year_mid_shonan_pantograph;
+	6: sw_211_gfx_year_mid_shonan_pantograph;
 	default: spriteset_211_mid_shonan;
 }
 
 switch(0, SELF, sw_211_gfx_pantograph_pos_shonan_tk_ddsd, position_in_vehid_chain) {
-	1: spriteset_211_mid_darm_shonan;
+	1: sw_211_gfx_year_mid_shonan_pantograph;
 	2: spriteset_211_mid_ddgrnew_shonan;
 	3: spriteset_211_mid_sdgrcar_shonan;
-	6: spriteset_211_mid_darm_shonan;
+	6: sw_211_gfx_year_mid_shonan_pantograph;
 	default: spriteset_211_mid_shonan;
 }
 
 switch(0, SELF, sw_211_gfx_pantograph_pos_shonan_tk_dddd, position_in_vehid_chain) {
-	1: spriteset_211_mid_darm_shonan;
+	1: sw_211_gfx_year_mid_shonan_pantograph;
 	2: spriteset_211_mid_ddgrnew_shonan;
 	3: spriteset_211_mid_ddgrnew_shonan;
-	6: spriteset_211_mid_darm_shonan;
+	6: sw_211_gfx_year_mid_shonan_pantograph;
 	default: spriteset_211_mid_shonan;
 }
 
@@ -63751,13 +63751,13 @@ switch(0, SELF, sw_KH25_gfx_revflip_back_livery, [STORE_TEMP((position_in_consis
 }
 
 switch(0, SELF, sw_KH25_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
-	1: sw_KH25_gfx_rev_front_livery;
-	default: sw_KH25_gfx_revflip_front_livery;
+	1: sw_KH25_gfx_revflip_front_livery;
+	default: sw_KH25_gfx_rev_front_livery;
 }
 
 switch(0, SELF, sw_KH25_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
-	1: sw_KH25_gfx_rev_back_livery;
-	default: sw_KH25_gfx_revflip_back_livery;
+	1: sw_KH25_gfx_revflip_back_livery;
+	default: sw_KH25_gfx_rev_back_livery;
 }
 
 switch(0, SELF, sw_KH25_gfx_rev_frontback_nomucars, [STORE_TEMP(((position_in_consist_from_end - position_in_consist) - 1), 271), (var[0x61, 0, 255, 65] % 2)]) {
