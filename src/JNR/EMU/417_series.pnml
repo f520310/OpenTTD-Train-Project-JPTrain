@@ -145,7 +145,7 @@ item(FEAT_TRAINS, emu_417) {
         purchase:                     spriteset_417_purchase;
         additional_text:	      
         string(STR_TRAIN_DESC,
-        string(STR_STANDARDGAUGE),
+        string(STR_NARROWGAUGE),
         string(STR_DENKI, string(STR_AC_DC_2_HZ, 20, 50,60, 1500)),
         string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
         string(STR_USAGE, string(STR_USE_REGIO)),
