@@ -97,6 +97,7 @@ item(FEAT_TRAINS, dmu_kiha201) {
 		    purchase:                 spriteset_KH201_purchase;
 		    additional_text:	      return string(JRH_kiha201_DESC);
         //cargo_subtype_text:           sw_KH201_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_KH201_attach_vehid;
         //start_stop:                   ;
     }

@@ -1,3 +1,30 @@
+/*---271 SPRITESHEETS BLOCK---*/
+
+/*-Purchase Sprites-*/
+spriteset (spriteset_271_purchase,    "gfx/JRW/emu271/purchase.png")     { tmpl_purchase(0, 0) }
+alternative_sprites (spriteset_271_purchase,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,   "gfx/JRW/emu271/purchase_32bpp.png")     { tmpl_purchase_dh_32bpp(0, 0) }
+
+/*-Livery: Haruka-*/
+spriteset (spriteset_271_front_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_271_front_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu271/271.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_271_back_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_271_back_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu271/271.png")     { tmpl_std(0, 75) }
+
+spriteset (spriteset_271_mid_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_271_mid_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu271/271.png")     { tmpl_std(0, 125) }
+
+spriteset (spriteset_271_mid_panto_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_271_mid_panto_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu271/271.png")     { tmpl_std(0, 100) }
+
+spriteset (spriteset_271_back_panto_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_271_back_panto_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu271/271.png")     { tmpl_std(0, 75) }
+
 /*---JpyNML2 Generated---*/
 
 /*---CONSIST SWITCH BLOCK---*/
@@ -99,6 +126,7 @@ item(FEAT_TRAINS, emu_271) {
         // string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:           sw_271_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_express - param_capacity_express;
         can_attach_wagon:             sw_271_attach_vehid;
         //start_stop:                   ;
     }

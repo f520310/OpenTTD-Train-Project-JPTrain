@@ -201,6 +201,7 @@ item(FEAT_TRAINS, emu_119) {
 		    purchase:               spriteset_EMU119_purchase;
 		    additional_text:	      return string(JNR_119_DESC);
         cargo_subtype_text:     sw_EMU119_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_EMU119_attach_vehid;
         //start_stop:           ;
     }

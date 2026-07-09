@@ -1,3 +1,78 @@
+//Purchase Sprites
+spriteset (spriteset_225_5000_purchase,	                                                    "gfx/JRW/emu225/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_225_5000_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRW/emu225/purchase_5000_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+/*---GFX: Spritesets---*/
+//5000type Spriteset
+spriteset(spriteset_225_5000_front_5000type,     "gfx/JRW/EMU225/5000_6000/225_5000.png")      {tmpl_rpstd_rev(1, 122)}
+spriteset(spriteset_225_5000_back_5000type,     "gfx/JRW/EMU225/5000_6000/225_5000.png")      {tmpl_rpstd_panto25_rev(1, 32)}
+spriteset(spriteset_225_5000_mid_5000type,     "gfx/JRW/EMU225/5000_6000/225_5000.png")      {tmpl_rpstd(1, 92)}
+spriteset(spriteset_225_5000_mid_panto_5000type,     "gfx/JRW/EMU225/5000_6000/225_5000.png")      {tmpl_rpstd_panto25(1, 62)}
+
+/*
+alternative_sprites(spriteset_225_5000_front_5000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_back_5000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_225_5000_mid_5000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_mid_panto_5000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+
+*/
+//5000type OVERRIDE Spriteset
+spriteset(spriteset_225_5000_back_wing_5000type,     "gfx/JRW/EMU225/5000_6000/225_5000_wing.png")      {tmpl_rpstdw_panto25_rev(1, 32)}
+spriteset(spriteset_225_5000_front_wing_5000type,     "gfx/JRW/EMU225/5000_6000/225_5000_wing.png")      {tmpl_rpstdw_rev(1, 122)}
+
+/*
+alternative_sprites(spriteset_225_5000_front_wing_5000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_back_wing_5000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
+
+*/
+//5100type_nw Spriteset
+spriteset(spriteset_225_5000_front_5100type_nw,     "gfx/JRW/EMU225/5000_6000/225_5100.png")      {tmpl_rpstd_rev(1, 122)}
+spriteset(spriteset_225_5000_back_5100type_nw,     "gfx/JRW/EMU225/5000_6000/225_5100.png")      {tmpl_rpstd_panto25_rev(1, 32)}
+spriteset(spriteset_225_5000_mid_5100type_nw,     "gfx/JRW/EMU225/5000_6000/225_5100.png")      {tmpl_rpstd(1, 92)}
+spriteset(spriteset_225_5000_mid_panto_5100type_nw,     "gfx/JRW/EMU225/5000_6000/225_5100.png")      {tmpl_rpstd_panto25(1, 62)}
+
+/*
+alternative_sprites(spriteset_225_5000_front_5100type_nw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_back_5100type_nw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_225_5000_mid_5100type_nw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_mid_panto_5100type_nw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+
+*/
+//5100type_ww Spriteset
+spriteset(spriteset_225_5000_front_5100type_ww,     "gfx/JRW/EMU225/5000_6000/225_5100_wing.png")      {tmpl_rpstd_rev(1, 122)}
+spriteset(spriteset_225_5000_back_5100type_ww,     "gfx/JRW/EMU225/5000_6000/225_5100_wing.png")      {tmpl_rpstd_panto25_rev(1, 32)}
+spriteset(spriteset_225_5000_mid_5100type_ww,     "gfx/JRW/EMU225/5000_6000/225_5100_wing.png")      {tmpl_rpstd(1, 92)}
+spriteset(spriteset_225_5000_mid_panto_5100type_ww,     "gfx/JRW/EMU225/5000_6000/225_5100_wing.png")      {tmpl_rpstd_panto25(1, 62)}
+
+/*
+alternative_sprites(spriteset_225_5000_front_5100type_ww,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_back_5100type_ww,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_225_5000_mid_5100type_ww,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_mid_panto_5100type_ww,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+
+*/
+//6000type Spriteset
+spriteset(spriteset_225_5000_front_6000type,     "gfx/JRW/EMU225/5000_6000/225_6000.png")      {tmpl_rpstd_rev(1, 122)}
+spriteset(spriteset_225_5000_back_6000type,     "gfx/JRW/EMU225/5000_6000/225_6000.png")      {tmpl_rpstd_panto25_rev(1, 32)}
+spriteset(spriteset_225_5000_mid_6000type,     "gfx/JRW/EMU225/5000_6000/225_6000.png")      {tmpl_rpstd(1, 92)}
+spriteset(spriteset_225_5000_mid_panto_6000type,     "gfx/JRW/EMU225/5000_6000/225_6000.png")      {tmpl_rpstd_panto25(1, 62)}
+
+/*
+alternative_sprites(spriteset_225_5000_front_6000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_back_6000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_225_5000_mid_6000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_mid_panto_6000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+
+*/
+//6000type OVERRIDE Spriteset
+spriteset(spriteset_225_5000_back_wing_6000type,     "gfx/JRW/EMU225/5000_6000/225_6000_wing.png")      {tmpl_rpstdw_panto25_rev(1, 32)}
+spriteset(spriteset_225_5000_front_wing_6000type,     "gfx/JRW/EMU225/5000_6000/225_6000_wing.png")      {tmpl_rpstdw_rev(1, 122)}
+
+/*
+alternative_sprites(spriteset_225_5000_front_wing_6000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_225_5000_back_wing_6000type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu2255000/LIVERY_REF/225_5000-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
+
+*/
+
 
 /*---GFX: Override Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_spriteset_225_5000_front_5000type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
@@ -211,6 +286,7 @@ item(FEAT_TRAINS, emu_225_5000) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:           sw_225_5000_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_225_5000_attach_vehid;
         //start_stop:                   ;
     }

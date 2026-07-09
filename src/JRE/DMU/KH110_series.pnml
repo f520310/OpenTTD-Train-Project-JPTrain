@@ -1,3 +1,38 @@
+/*---KH110---*/
+//Purchase Sprites
+spriteset (spriteset_KH110_purchase,	                                                    "gfx/JRE/dmuKH110/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH110 JR Green
+spriteset (spriteset_KH110_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
+
+//KH110 JR Green Black Front
+spriteset (spriteset_KH110_greenblack,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
+
+//KH110 Rikku East Line
+spriteset (spriteset_KH110_rikku,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_rikku,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std(0, 0)}
+
+//KH110 Akita Relay
+spriteset (spriteset_KH110_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std(0, 0)}
+
+//KH110 VOITURE AMITIE
+spriteset (spriteset_KH110_voitami,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_voitami,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std(0, 0)}
+
+//KH110 Metropolitan Koumi Line Special
+spriteset (spriteset_KH110_metrored,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_metrored,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std(0, 0)}
+
 
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/

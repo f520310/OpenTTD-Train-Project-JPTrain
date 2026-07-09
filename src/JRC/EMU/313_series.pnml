@@ -1,3 +1,23 @@
+/*---313---*/
+//313 Purchase Sprites
+spriteset (spriteset_313_purchase,	  "gfx/JRC/emu313/313_Purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_313_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRC/emu313/313_Purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//313 Tokai
+spriteset (spriteset_313_front,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_back_onep,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_back_twop,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_mid_onep,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_313_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-1_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_313_back_onep, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-2_32bpp.png")        {tmpl_std_panto25_rev(0, 27)}
+alternative_sprites(spriteset_313_back_twop, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-3_32bpp.png")        {tmpl_std_panto25_rev(0, 27)}
+alternative_sprites(spriteset_313_mid_onep,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-4_32bpp.png")        {tmpl_std_panto25(0, 0)}
+alternative_sprites(spriteset_313_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-5_32bpp.png")        {tmpl_std(0, 0)}
+
+/*---END OF SECTION---*/
+
 
 /*---GFX: Pantograph Positions---*/
 
@@ -99,6 +119,7 @@ item(FEAT_TRAINS, emu_313) {
         // string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:     sw_313_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_313_attach_vehid;
         //start_stop:                   ;
     }

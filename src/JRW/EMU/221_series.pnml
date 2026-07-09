@@ -1,3 +1,22 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_221_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_221_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRW/emu221/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//221 Orginal
+spriteset (spriteset_221_front,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_221_grfront,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_221_back_sp,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_221_back_dp,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_221_mid,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_221_mid_panto,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_221_front,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRW/emu221/221-1-1.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_221_back_sp,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRW/emu221/221-1-2.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_221_back_dp,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRW/emu221/221-1-3.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_221_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRW/emu221/221-1-4.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_221_mid_panto,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRW/emu221/221-1-5.png")           {tmpl_std_rev(0, 1)}
+
 
 
 /*---GFX: Pantograph Positions---*/
@@ -113,6 +132,7 @@ item(FEAT_TRAINS, emu_221) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:           sw_221_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_221_attach_vehid;
         //start_stop:                   ;
     }

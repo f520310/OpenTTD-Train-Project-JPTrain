@@ -119,6 +119,7 @@ item(FEAT_TRAINS, emu_63) {
         string(STR_OPERATOR, string(STR_CONCAT_2_DASH, string(STR_OP_JGR),string(STR_JNR))));
 
         cargo_subtype_text:     sw_EMU63_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_EMU63_attach_vehid;
         //start_stop:           ;
     }

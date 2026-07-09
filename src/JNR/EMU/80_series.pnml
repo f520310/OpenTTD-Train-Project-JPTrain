@@ -264,6 +264,7 @@ item(FEAT_TRAINS, emu_80) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
 
         cargo_subtype_text:           sw_80_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_rapid - param_capacity_rapid;
         can_attach_wagon:			  sw_80_attach_vehid;
         //start_stop:                   ;
     }

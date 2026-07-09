@@ -1,3 +1,38 @@
+/*---281 SPRITESHEETS BLOCK---*/
+
+/*-Purchase Sprites-*/
+spriteset (spriteset_281_purchase,     "gfx/JRW/emu281/purchase.png")     { tmpl_purchase(0, 0) }
+alternative_sprites (spriteset_281_purchase,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRW/emu281/purchase_32bpp.png")     { tmpl_purchase_dh_32bpp(0, 0) }
+
+/*-Livery: Haruka-*/
+spriteset (spriteset_281_front_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_front_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 50) }
+
+spriteset (spriteset_281_front_gr_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_front_gr_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_281_back_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_back_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 75) }
+
+spriteset (spriteset_281_mid_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_mid_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 175) }
+
+spriteset (spriteset_281_mid100_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_mid100_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 200) }
+
+spriteset (spriteset_281_mid_panto_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_mid_panto_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 150) }
+
+spriteset (spriteset_281_back_panto_Haruka,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_281_back_panto_Haruka,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRW/emu281/281.png")     { tmpl_std(0, 125) }
+
 /*---JpyNML2 Generated---*/
 
 /*---CONSIST SWITCH BLOCK---*/
@@ -111,6 +146,7 @@ item(FEAT_TRAINS, emu_281) {
         // string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:           sw_281_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_express - param_capacity_express;
         can_attach_wagon:             sw_281_attach_vehid;
         //start_stop:                   ;
     }

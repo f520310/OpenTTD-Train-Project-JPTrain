@@ -1,3 +1,124 @@
+/*---E233---*/
+//purchase sprites
+spriteset (spriteset_E233_purchase,	                                                     "gfx/JRE/emuE233/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_E233_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE233/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//E233-0 Chou Line
+spriteset (spriteset_E233_front_chou,	  	                                               "gfx/JRE/emuE233/E233-0_v2.png")          	   {tmpl_std(0, 0)}
+spriteset (spriteset_E233_back_chou,	  	                                               "gfx/JRE/emuE233/E233-0_v2.png")              {tmpl_std(0, 25)}
+spriteset (spriteset_E233_middle_chou,		                                               "gfx/JRE/emuE233/E233-0_v2.png")          	   {tmpl_std(0, 50)}
+spriteset (spriteset_E233_midpan_chou,		                                               "gfx/JRE/emuE233/E233-0_v2.png") 	           {tmpl_std(0, 75)}
+spriteset (spriteset_E233_midpant_chou,	                                                 "gfx/JRE/emuE233/E233-0_v2.png")            	 {tmpl_std(0, 100)}
+spriteset (spriteset_E233_middd_chou,                                                    "gfx/JRE/emuE233/E233-0_v2.png")              {tmpl_std(0, 125)}
+alternative_sprites(spriteset_E233_front_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-0_v2_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-0_v2_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-0_v2_32bpp.png")        {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-0_v2_32bpp.png")        {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpant_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-0_v2_32bpp.png")        {tmpl_std(0, 100)}
+alternative_sprites(spriteset_E233_middd_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-0_v2_32bpp.png")        {tmpl_std(0, 125)}
+
+spriteset (spriteset_E233_backpan_chou,	  	                                                "gfx/JRE/emuE233/E233-0_v2.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_chou, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-0_v2_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
+//E233-1000 Keihin-Touhoku Line
+spriteset (spriteset_E233_front_kt,	  	                                                    "gfx/JRE/emuE233/E233-1000_v2.png")           {tmpl_std(0, 0)}
+spriteset (spriteset_E233_back_kt,	  	                                                    "gfx/JRE/emuE233/E233-1000_v2.png")           {tmpl_std(0, 25)}
+spriteset (spriteset_E233_middle_kt,		                                                    "gfx/JRE/emuE233/E233-1000_v2.png")          	{tmpl_std(0, 50)}
+spriteset (spriteset_E233_midpan_kt,		                                                    "gfx/JRE/emuE233/E233-1000_v2.png") 	        {tmpl_std(0, 75)}
+spriteset (spriteset_E233_midpant_kt,	                                                      "gfx/JRE/emuE233/E233-1000_v2.png")          	{tmpl_std(0, 100)}
+alternative_sprites(spriteset_E233_front_kt, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,            "gfx/JRE/emuE233/E233-1000_v2_32bpp.png")     {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_kt, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/emuE233/E233-1000_v2_32bpp.png")     {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_kt, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,           "gfx/JRE/emuE233/E233-1000_v2_32bpp.png")     {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_kt, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,           "gfx/JRE/emuE233/E233-1000_v2_32bpp.png")     {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpant_kt, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emuE233/E233-1000_v2_32bpp.png")     {tmpl_std(0, 100)}
+
+spriteset (spriteset_E233_backpan_kt,	  	                                                "gfx/JRE/emuE233/E233-1000_v2.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_kt, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-1000_v2_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
+//E233-2000 Joban
+spriteset(spriteset_E233_front_2000, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,            "gfx/JRE/emuE233/E233-2000.png")     {tmpl_std(0, 0)}
+spriteset(spriteset_E233_back_2000, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/emuE233/E233-2000.png")     {tmpl_std_rev(0, 25)}
+spriteset(spriteset_E233_middle_2000, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,           "gfx/JRE/emuE233/E233-2000.png")     {tmpl_std_rev(0, 100)}
+spriteset(spriteset_E233_midpan_2000, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,           "gfx/JRE/emuE233/E233-2000.png")     {tmpl_std_rev(0, 50)}
+spriteset(spriteset_E233_midpant_2000, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emuE233/E233-2000.png")     {tmpl_std_rev(0, 75)}
+
+//E233-3000 Tokaido
+spriteset (spriteset_E233_front_tk,	                                                   	 "gfx/JRE/emuE233/E233-3000_v2.png")           {tmpl_std(0, 0)}
+spriteset (spriteset_E233_back_tk,	  	                                                 "gfx/JRE/emuE233/E233-3000_v2.png")           {tmpl_std(0, 25)}
+spriteset (spriteset_E233_middle_tk,		                                                 "gfx/JRE/emuE233/E233-3000_v2.png")           {tmpl_std(0, 50)}
+spriteset (spriteset_E233_midpan_tk,		                                                 "gfx/JRE/emuE233/E233-3000_v2.png") 	         {tmpl_std(0, 75)}
+spriteset (spriteset_E233_midpant_tk,	                                                   "gfx/JRE/emuE233/E233-3000_v2.png")           {tmpl_std(0, 100)}
+spriteset (spriteset_E233_middd_tk,   	                                                 "gfx/JRE/emuE233/E233-3000_v2.png")           {tmpl_std(0, 125)}
+alternative_sprites(spriteset_E233_front_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_E233_midpant_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 100)}
+alternative_sprites(spriteset_E233_middd_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 125)}
+
+spriteset (spriteset_E233_backpan_tk,	  	                                                "gfx/JRE/emuE233/E233-3000_v2.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-3000_v2_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
+//E233-5000 Keiyo Line
+spriteset (spriteset_E233_front_keiyo,	  	"gfx/JRE/emuE233/E233-5000_v2.png")          	{ tmpl_std(0, 0) }
+spriteset (spriteset_E233_back_keiyo,	  	"gfx/JRE/emuE233/E233-5000_v2.png")            { tmpl_std(0, 25) }
+spriteset (spriteset_E233_middle_keiyo,		"gfx/JRE/emuE233/E233-5000_v2.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_E233_midpan_keiyo,		"gfx/JRE/emuE233/E233-5000_v2.png") 	          { tmpl_std(0, 75) }
+spriteset (spriteset_E233_midpant_keiyo,	  "gfx/JRE/emuE233/E233-5000_v2.png")          	{ tmpl_std(0, 100) }
+alternative_sprites(spriteset_E233_front_keiyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-5000_v2_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_keiyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-5000_v2_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_keiyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-5000_v2_32bpp.png")        {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_keiyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-5000_v2_32bpp.png")        {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpant_keiyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-5000_v2_32bpp.png")        {tmpl_std(0, 100)}
+
+spriteset (spriteset_E233_backpan_keiyo,	  	                                                   "gfx/JRE/emuE233/E233-5000_v2.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-5000_v2_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
+//E233-6000 Yokoyama Line
+spriteset (spriteset_E233_front_yoko,	  	"gfx/JRE/emuE233/E233-6000_v2.png")          	{ tmpl_std(0, 0) }
+spriteset (spriteset_E233_back_yoko,	  	"gfx/JRE/emuE233/E233-6000_v2.png")            { tmpl_std(0, 25) }
+spriteset (spriteset_E233_middle_yoko,		"gfx/JRE/emuE233/E233-6000_v2.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_E233_midpan_yoko,		"gfx/JRE/emuE233/E233-6000_v2.png") 	          { tmpl_std(0, 75) }
+spriteset (spriteset_E233_midpant_yoko,	  "gfx/JRE/emuE233/E233-6000_v2.png")          	{ tmpl_std(0, 100) }
+alternative_sprites(spriteset_E233_front_yoko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-6000_v2_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_yoko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-6000_v2_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_yoko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-6000_v2_32bpp.png")        {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_yoko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-6000_v2_32bpp.png")        {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpant_yoko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-6000_v2_32bpp.png")        {tmpl_std(0, 100)}
+
+spriteset (spriteset_E233_backpan_yoko,	  	                                                   "gfx/JRE/emuE233/E233-6000_v2.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_yoko,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-6000_v2_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
+//E233-7000 Saikyo Line
+spriteset (spriteset_E233_front_saikyo,	  	"gfx/JRE/emuE233/E233-7000_v2.png")          	{ tmpl_std(0, 0) }
+spriteset (spriteset_E233_back_saikyo,	  	"gfx/JRE/emuE233/E233-7000_v2.png")            { tmpl_std(0, 25) }
+spriteset (spriteset_E233_middle_saikyo,		"gfx/JRE/emuE233/E233-7000_v2.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_E233_midpan_saikyo,		"gfx/JRE/emuE233/E233-7000_v2.png") 	          { tmpl_std(0, 75) }
+spriteset (spriteset_E233_midpant_saikyo,	  "gfx/JRE/emuE233/E233-7000_v2.png")          	{ tmpl_std(0, 100) }
+alternative_sprites(spriteset_E233_front_saikyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-7000_v2_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_saikyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-7000_v2_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_saikyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-7000_v2_32bpp.png")        {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_saikyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-7000_v2_32bpp.png")        {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpant_saikyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-7000_v2_32bpp.png")        {tmpl_std(0, 100)}
+
+spriteset (spriteset_E233_backpan_saikyo,	  	                                                   "gfx/JRE/emuE233/E233-7000_v2.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_saikyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-7000_v2_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
+//E233-8000 Nannbu Line
+spriteset (spriteset_E233_front_nanbu,	  	"gfx/JRE/emuE233/E233-8000_v3.png")          	{ tmpl_std(0, 0) }
+spriteset (spriteset_E233_back_nanbu,	  	"gfx/JRE/emuE233/E233-8000_v3.png")            { tmpl_std(0, 25) }
+spriteset (spriteset_E233_middle_nanbu,		"gfx/JRE/emuE233/E233-8000_v3.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_E233_midpan_nanbu,		"gfx/JRE/emuE233/E233-8000_v3.png") 	          { tmpl_std(0, 75) }
+spriteset (spriteset_E233_midpant_nanbu,	  "gfx/JRE/emuE233/E233-8000_v3.png")          	{ tmpl_std(0, 100) }
+alternative_sprites(spriteset_E233_front_nanbu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-8000_v3_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E233_back_nanbu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-8000_v3_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_middle_nanbu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-8000_v3_32bpp.png")        {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E233_midpan_nanbu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-8000_v3_32bpp.png")        {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpant_nanbu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-8000_v3_32bpp.png")        {tmpl_std(0, 100)}
+
+spriteset (spriteset_E233_backpan_nanbu,	  	                                                   "gfx/JRE/emuE233/E233-8000_v3.png")                    {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E233_backpan_nanbu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-8000_v3_32bpp-extra.png")        {tmpl_std_rev(0, 25)}
+
 /*---GFX: Pantograph Positions---*/
 //E233-0 Chou Line
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_numofcars_chou, num_vehs_in_vehid_chain){
@@ -396,6 +517,7 @@ item(FEAT_TRAINS, emu_E233) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:           sw_E233_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			        sw_E233_attach_vehid;
         //start_stop:                   ;
     }

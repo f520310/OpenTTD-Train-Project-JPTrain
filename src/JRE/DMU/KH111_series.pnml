@@ -1,3 +1,47 @@
+/*---KH111---*/
+//Purchase Sprites
+spriteset (spriteset_KH111_purchase,	                                                    "gfx/JRE/dmuKH111/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH111_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH111/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//KH111 Green
+spriteset (spriteset_KH111_front_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH111_back_green,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 25)}
+ 
+
+//KH111 Hachiko Line
+spriteset (spriteset_KH111_front_hachiko,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_hachiko,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_hachiko,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 50)}
+alternative_sprites(spriteset_KH111_back_hachiko,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 75)}
+ 
+
+//KH111 Rikuu Line
+spriteset (spriteset_KH111_front_rikuu,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_rikuu,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_rikuu,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 100)}
+alternative_sprites(spriteset_KH111_back_rikuu,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 125)}
+ 
+
+//KH111 Akita Relay
+spriteset (spriteset_KH111_front_akita,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 150)}
+alternative_sprites(spriteset_KH111_back_akita,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 175)}
+ 
+
+//KH111 Express Koumi Line Special
+spriteset (spriteset_KH111_front_koumi,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_koumi,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_koumi,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 200)}
+alternative_sprites(spriteset_KH111_back_koumi,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 225)}
+
 
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
@@ -106,6 +150,7 @@ item(FEAT_TRAINS, dmu_KH111) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
 
         cargo_subtype_text:           sw_KH111_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_rapid - param_capacity_rapid;
         can_attach_wagon:			  sw_KH111_attach_vehid;
         //start_stop:                   ;
     }

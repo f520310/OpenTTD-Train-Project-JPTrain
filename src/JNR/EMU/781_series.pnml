@@ -122,6 +122,7 @@ item(FEAT_TRAINS, emu_781) {
         string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_JR_HOKKAIDO)))));
 
         //cargo_subtype_text:           sw_781_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_express - param_capacity_express;
         can_attach_wagon:             sw_781_attach_vehid;
         //start_stop:                   ;
     }

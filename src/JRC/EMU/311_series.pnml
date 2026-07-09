@@ -1,3 +1,19 @@
+/*---311---*/
+//311 Purchase Sprites
+spriteset (spriteset_311_purchase,	                                                    "gfx/JRC/emu311/311_Purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_311_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRC/emu311/311_Purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//311 Tokai
+spriteset (spriteset_311_front,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_back_darm,   "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_back_sarm,   "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_mid,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_311_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-1_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_311_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-2_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_311_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-3_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_311_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-4_32bpp.png")        {tmpl_std(0, 1)}
+
 
 
 /*---GFX: Year Dependent Graphics---*/
@@ -80,6 +96,7 @@ item(FEAT_TRAINS, emu_311) {
         // string(STR_LIVERIES, string(LV_VARIOUS)));
         
         //cargo_subtype_text:           sw_311_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_311_attach_vehid;
         //start_stop:                   ;
     }

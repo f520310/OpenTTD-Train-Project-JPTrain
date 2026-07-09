@@ -1,3 +1,63 @@
+/*---GFX: Spritesets---*/
+
+/*---E231---*/
+//purchase sprites
+spriteset (spriteset_E231_purchase,	                                                     "gfx/JRE/emuE231/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_E231_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE231/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//E231-1000 Suburban
+spriteset (spriteset_E231_front_tk,	    	"gfx/JRE/emuE231/E231_Suburban.png")          	{ tmpl_std(0, 0) }
+spriteset (spriteset_E231_back_tk,	  	  "gfx/JRE/emuE231/E231_Suburban.png")            { tmpl_std(0, 25) }
+spriteset (spriteset_E231_frontwc_tk,	  	"gfx/JRE/emuE231/E231_Suburban.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_E231_backwc_tk,	  	"gfx/JRE/emuE231/E231_Suburban.png")            { tmpl_std(0, 75) }
+spriteset (spriteset_E231_mid_tk,	       	"gfx/JRE/emuE231/E231_Suburban.png")          	{ tmpl_std(0, 100) }
+spriteset (spriteset_E231_midwc_tk,	    	"gfx/JRE/emuE231/E231_Suburban.png")          	{ tmpl_std(0, 125) }
+spriteset (spriteset_E231_midpan_tk,	   	"gfx/JRE/emuE231/E231_Suburban.png") 	          { tmpl_std(0, 150) }
+spriteset (spriteset_E231_middd_tk,	      "gfx/JRE/emuE231/E231_Suburban.png")          	{ tmpl_std(0, 175) }
+spriteset (spriteset_E231_midddwc_tk,	    "gfx/JRE/emuE231/E231_Suburban.png")          	{ tmpl_std(0, 200) }
+
+spriteset (spriteset_E231_backpan_tk,	      	  "gfx/JRE/emuE231/E231_Suburban-extra.png")            { tmpl_std_rev(0, 25) }
+
+//E231-0 Sobu
+spriteset (spriteset_E231_0_front_sobu,	        	"gfx/JRE/emuE231/E231_0_Soubu.png")       { tmpl_std(0, 0) }
+spriteset (spriteset_E231_0_back_sobu,	        	"gfx/JRE/emuE231/E231_0_Soubu.png")       { tmpl_std(0, 25) }
+spriteset (spriteset_E231_0_midhd_sobu,	         	"gfx/JRE/emuE231/E231_0_Soubu.png")      	{ tmpl_std(0, 50) }
+spriteset (spriteset_E231_0_mid_sobu,	        	"gfx/JRE/emuE231/E231_0_Soubu.png")       { tmpl_std(0, 75) }
+spriteset (spriteset_E231_0_midpan_sobu,		   	"gfx/JRE/emuE231/E231_0_Soubu.png") 	    { tmpl_std(0, 100) }
+
+spriteset (spriteset_E231_0_backpan_sobu,	      	  "gfx/JRE/emuE231/E231_0_Soubu-extra.png")            { tmpl_std_rev(0, 25) }
+
+//E231-500 Sobu
+spriteset (spriteset_E231_500_front_sobu,	       	"gfx/JRE/emuE231/E231_500_Soubu.png")  	{ tmpl_std(0, 0) }
+spriteset (spriteset_E231_500_back_sobu,	     	  "gfx/JRE/emuE231/E231_500_Soubu.png")   { tmpl_std(0, 25) }
+spriteset (spriteset_E231_500_midhd_sobu,	      	"gfx/JRE/emuE231/E231_500_Soubu.png")   { tmpl_std(0, 50) }
+spriteset (spriteset_E231_500_mid_sobu,	        	"gfx/JRE/emuE231/E231_500_Soubu.png")   { tmpl_std(0, 75) }
+spriteset (spriteset_E231_500_midpan_sobu,		   	"gfx/JRE/emuE231/E231_500_Soubu.png") 	{ tmpl_std(0, 100) }
+
+spriteset (spriteset_E231_500_backpan_sobu,	      	  "gfx/JRE/emuE231/E231_500_Soubu-extra.png")            { tmpl_std_rev(0, 25) }
+
+//E231-500 Yamanote
+spriteset (spriteset_E231_front_yamanote,	       	"gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 0) }
+spriteset (spriteset_E231_back_yamanote,	     	  "gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 25) }
+spriteset (spriteset_E231_midhd_yamanote,	      	"gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 50) }
+spriteset (spriteset_E231_mid_yamanote,	        	"gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 75) }
+spriteset (spriteset_E231_midpan_yamanote,		   	"gfx/JRE/emuE231/E231_500_Yamanote.png") 	{ tmpl_std(0, 100) }
+
+spriteset (spriteset_E231_backpan_yamanote,	      	  "gfx/JRE/emuE231/E231_500_Yamanote-extra.png")            { tmpl_std_rev(0, 25) }
+
+//E231-800 Chuo Sobu Tozai
+spriteset (spriteset_E231_front_chsoto,	       	"gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 0) }
+spriteset (spriteset_E231_back_chsoto,	     	  "gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 25) }
+spriteset (spriteset_E231_mid_chsoto,	        	"gfx/JRE/emuE231/E231_500_Yamanote.png")   { tmpl_std(0, 75) }
+spriteset (spriteset_E231_midpan_chsoto,		   	"gfx/JRE/emuE231/E231_500_Yamanote.png") 	{ tmpl_std(0, 100) }
+alternative_sprites(spriteset_E231_front_chsoto,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE231/E231-800_Chuo-Sobu-Tozai_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E231_back_chsoto,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE231/E231-800_Chuo-Sobu-Tozai_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E231_mid_chsoto,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE231/E231-800_Chuo-Sobu-Tozai_32bpp.png")        {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E231_midpan_chsoto,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE231/E231-800_Chuo-Sobu-Tozai_32bpp.png")        {tmpl_std(0, 75)}
+
+spriteset (spriteset_E231_backpan_chsoto,	      	  "gfx/JRE/emuE231/E231_500_Yamanote-extra.png")            { tmpl_std_rev(0, 25) }
+alternative_sprites(spriteset_E231_backpan_chsoto,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE231/E231-800_Chuo-Sobu-Tozai_32bpp.png")        {tmpl_std_rev(0, 125)}
+
 /*---GFX: Pantograph Positions---*/
 //E231-1000 Suburban
 switch(FEAT_TRAINS,SELF, sw_E231_gfx_pantograph_pos_tk_default_dd, position_in_vehid_chain%10){
@@ -267,6 +327,7 @@ item(FEAT_TRAINS, emu_E231) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
         
         cargo_subtype_text:           sw_E231_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_E231_attach_vehid;
         //start_stop:                   ;
     }

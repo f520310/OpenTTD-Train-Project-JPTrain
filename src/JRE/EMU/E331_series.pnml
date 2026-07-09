@@ -135,6 +135,7 @@ item(FEAT_TRAINS, emu_E331) {
         string(STR_USAGE, string(STR_USE_COMMUTER)),
         string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))),
         string(STR_LIVERIES, string(LV_VARIOUS)));
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         
         can_attach_wagon:			  sw_E331_attach_vehid;
         //start_stop:                   ;

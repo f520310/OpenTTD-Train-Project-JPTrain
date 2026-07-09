@@ -194,6 +194,7 @@ item(FEAT_TRAINS, emu_165) {
         string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_CONCAT_3,string(STR_JR_EAST),string(STR_JR_CENTRAL),string(STR_JR_WEST))))));
 
         cargo_subtype_text:           sw_165_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_rapid - param_capacity_rapid;
         can_attach_wagon:			  sw_165_attach_vehid;
         //start_stop:                   ;
     }

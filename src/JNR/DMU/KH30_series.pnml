@@ -1,3 +1,71 @@
+//--- Shared KH DMU switches ---
+
+//mucar spritesets
+spriteset (spriteset_KH58_mid_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH58_midgr_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_KH58_mid_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/JNR_58.png")           {tmpl_std(0, 101)}
+alternative_sprites(spriteset_KH58_midgr_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/JNR_58.png")           {tmpl_std(0, 126)}
+spriteset (spriteset_KH143_mid_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_KH143_mid_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/143_144_std.png")           {tmpl_std(0, 100)}
+
+switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: return string(STR_STARTSTOP_JNRKH_MU);
+}
+
+switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //only KiHa types with a cab at both ends
+  1500: sw_JNR_KH_startstop3; //kh40
+  1505: sw_JNR_KH_startstop3; //kh54
+  1514: sw_JNR_KH_startstop3; //kh30
+  1516: sw_JNR_KH_startstop3; //kh33
+  1519: sw_JNR_KH_startstop3; //kh130
+  1508: sw_JNR_KH_startstop3; //kh150
+
+  
+  default: return string(STR_STARTSTOP_JNRKH);
+}
+
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //all KiHa types here
+  1500: sw_JNR_KH_startstop3; //kh40
+  1505: sw_JNR_KH_startstop3; //kh54
+  1506: sw_JNR_KH_startstop3; //kh58
+  1507: sw_JNR_KH_startstop3; //kh141
+  1514: sw_JNR_KH_startstop3; //kh30
+  1516: sw_JNR_KH_startstop3; //kh33
+  1518: sw_JNR_KH_startstop3; //kh35
+  1519: sw_JNR_KH_startstop3; //kh130
+  1508: sw_JNR_KH_startstop3; //kh150
+
+  1000: sw_JNR_KH_startstop3; //mucar
+  default: sw_JNR_KH_startstop2;
+}
+
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_mucar, cargo_subtype) {
+  0: spriteset_KH58_mid_jnr;
+  1: spriteset_KH58_midgr_jnr;
+  2: spriteset_KH143_mid_jnr;
+}
+
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
+  0: string(LV_KH58);
+  1: string(LV_VARITION_END1);
+  2: string(LV_KH143); 
+}
+
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_attach_vehid, [
+    vehicle_type_id == dmu_kiha30 || 
+    vehicle_type_id == dmu_kiha35 || 
+    vehicle_type_id == dmu_kiha40 || 
+    vehicle_type_id == dmu_kiha54 || 
+    vehicle_type_id == dmu_kiha58 || 
+    vehicle_type_id == dmu_kiha130 ||
+    vehicle_type_id == dmu_kiha141 ||
+    vehicle_type_id == dmu_kiha150 ||
+    vehicle_type_id == mu_car]) {
+  0: return string(STR_ATTACH_JNRKH);
+  }
+
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH30_purchase,	                                                    "gfx/JNR/dmuKH30/purchase.png")               {tmpl_purchase_dh(0, 0)}

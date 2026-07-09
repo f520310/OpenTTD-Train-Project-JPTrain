@@ -1,3 +1,48 @@
+/*403*/
+spriteset (spriteset_403_purchase,	                                                    "gfx/JNR/emu415/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_403_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu415/403_purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+/*---GFX: Spritesets---*/
+//initial Spriteset
+spriteset(spriteset_403_front_initial,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_back_initial,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_mid_initial,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_mid_panto_initial,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_back_panto_initial,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_403_front_initial,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/initial/403-1-1.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_back_initial,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/initial/403-1-1.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_403_mid_initial,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/initial/401-1-2.png")       {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_mid_panto_initial,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/initial/401-1-3.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_back_panto_initial,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/initial/403-1-1-P.png")      {tmpl_std_rev(0, 26)}
+
+//joban Spriteset
+spriteset(spriteset_403_front_joban,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_back_joban,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_mid_joban,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_mid_panto_joban,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_back_panto_joban,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_403_front_joban,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/joban/403-2-1.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_back_joban,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/joban/403-2-1.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_403_mid_joban,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/joban/401-2-2.png")       {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_mid_panto_joban,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/joban/401-2-3.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_back_panto_joban,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/joban/403-2-1-P.png")      {tmpl_std_rev(0, 26)}
+
+//kyushu Spriteset
+spriteset(spriteset_403_front_kyushu,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_back_kyushu,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_mid_kyushu,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_mid_panto_kyushu,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_403_back_panto_kyushu,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_403_front_kyushu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/kyushu/423-1-1.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_back_kyushu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/kyushu/423-1-1.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_403_mid_kyushu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/kyushu/421-1-2.png")       {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_mid_panto_kyushu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/kyushu/421-1-3.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_403_back_panto_kyushu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/standard/kyushu/423-1-1-P.png")      {tmpl_std_rev(0, 26)}
+
+/*---END OF SECTION---*/
+
 
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
@@ -133,6 +178,7 @@ item(FEAT_TRAINS, emu_403) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
 
         cargo_subtype_text:           sw_403_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_415group_attach_vehid;
         //start_stop:                   ;
     }

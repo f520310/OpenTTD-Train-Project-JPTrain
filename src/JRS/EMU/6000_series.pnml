@@ -111,6 +111,7 @@ item(FEAT_TRAINS, emu_6000) {
         // string(STR_LIVERIES, string(LV_VARIOUS)));
         
         //cargo_subtype_text:           sw_6000_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_6000_attach_vehid;
         //start_stop:                   ;
     }

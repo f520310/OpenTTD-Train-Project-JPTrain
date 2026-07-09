@@ -1,3 +1,43 @@
+/*---213---*/
+//213 Purchase Sprites
+spriteset (spriteset_213_purchase,	                                                     "gfx/JNR/emu213/213_purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_213_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu213/213_purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//213 JRwest
+spriteset (spriteset_213_front_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_back_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_mid_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_213_front_jrw, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-1_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_back_jrw,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-2_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_mid_jrw,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-3_32bpp.png")        {tmpl_std(0, 1)}
+
+//213 Shonan
+spriteset (spriteset_213_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_mid_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_213_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_mid_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-1-1_fake32bpp.png")        {tmpl_std(0, 1)}
+
+//213 JRwest Super Saloon Yumeji
+spriteset (spriteset_213_front_s1,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s2,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s3,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s4,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s5,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_213_front_s1,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s3,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-3_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s4,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-4_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s5,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-5_32bpp.png")         {tmpl_std(0, 1)}
+
 
 
 /*---GFX: Year Dependent Graphics---*/
@@ -133,6 +173,7 @@ item(FEAT_TRAINS, emu_213) {
         string(STR_LIVERIES, string(LV_VARIOUS)));
 
         cargo_subtype_text:           sw_213_subtypetext_main;
+        purchase_cargo_capacity:      param_capacity_local - param_capacity_local;
         can_attach_wagon:			  sw_213_attach_vehid;
         //start_stop:                   ;
     }
