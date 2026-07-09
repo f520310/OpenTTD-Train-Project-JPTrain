@@ -2,7 +2,6 @@
 spriteset (set_mu_car_purchase,	    "gfx/OTHER/mucarbuy.png") 	{tmpl_purchase(0, 0)}
 spriteset (set_mu_car_base,       	"gfx/OTHER/mucar.png")     	{tmpl_std(0, 0)}
 
-
 item(FEAT_TRAINS, mu_car) {
     /* Define properties first, make sure to set all of them */
     property {
@@ -24,7 +23,7 @@ item(FEAT_TRAINS, mu_car) {
                 reliability_decay: 20;
                 refittable_cargo_classes: bitmask(CC_PASSENGERS);
                 refit_cost: 0;
-                track_type: [TR_1067_NE,TR_1435_NE];
+                track_type: TR_1067_NE;
                 misc_flags: bitmask(TRAIN_FLAG_TILT);
                 ai_special_flag: AI_FLAG_PASSENGER;
                 running_cost_base: RUNNING_COST_DIESEL;

@@ -57,9 +57,7 @@ alternative_sprites(spriteset_KH28_revflip_jnr,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_3
 
 
 
-/*---GFX: Train Reversing Switches---*/
 
-/*---END OF SECTION---*/
 
 
 
@@ -81,10 +79,6 @@ switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck_posfront, position_
  0: sw_KH58_jnr_gfx_frontback_flipcheck_posfront;
  default: sw_KH58_jnr_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH58_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH58_jnr_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 //KH28 JNR Vermillion no AC
 switch(FEAT_TRAINS, SELF, sw_KH28_jnr_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
  0: spriteset_KH28_revflip_jnr;
@@ -101,10 +95,6 @@ switch(FEAT_TRAINS, SELF, sw_KH28_jnr_gfx_frontback_revcheck_posback, position_i
 switch(FEAT_TRAINS, SELF, sw_KH28_jnr_gfx_frontback_revcheck_posfront, position_in_consist){
  0: sw_KH28_jnr_gfx_frontback_flipcheck_posfront;
  default: sw_KH28_jnr_gfx_frontback_revcheck_posback;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH28_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH28_jnr_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
 }
 //KH28 JNR Vermillion AC
 switch(FEAT_TRAINS, SELF, sw_KH28_jnr_ac_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
@@ -123,10 +113,6 @@ switch(FEAT_TRAINS, SELF, sw_KH28_jnr_ac_gfx_frontback_revcheck_posfront, positi
  0: sw_KH28_jnr_ac_gfx_frontback_flipcheck_posfront;
  default: sw_KH28_jnr_ac_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH28_jnr_ac_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH28_jnr_ac_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 //KH58 JNR Vermillion AC
 switch(FEAT_TRAINS, SELF, sw_KH58_jnr_ac_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
  0: spriteset_KH58_revflip_jnr_ac;
@@ -144,10 +130,6 @@ switch(FEAT_TRAINS, SELF, sw_KH58_jnr_ac_gfx_frontback_revcheck_posfront, positi
  0: sw_KH58_jnr_ac_gfx_frontback_flipcheck_posfront;
  default: sw_KH58_jnr_ac_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH58_jnr_ac_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH58_jnr_ac_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -158,10 +140,10 @@ switch(FEAT_TRAINS, PARENT, sw_KH58_jnr_ac_gfx_frontback_revcheck, vehicle_is_re
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH58_gfx_main, cargo_subtype) {
-  0: sw_KH58_jnr_gfx_frontback_revcheck;
-  1: sw_KH28_jnr_gfx_frontback_revcheck;
-  2: sw_KH58_jnr_ac_gfx_frontback_revcheck;
-  3: sw_KH28_jnr_ac_gfx_frontback_revcheck;
+  0: sw_KH58_jnr_gfx_frontback_revcheck_posfront;
+  1: sw_KH28_jnr_gfx_frontback_revcheck_posfront;
+  2: sw_KH58_jnr_ac_gfx_frontback_revcheck_posfront;
+  3: sw_KH28_jnr_ac_gfx_frontback_revcheck_posfront;
 }
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH58_subtypetext_main, cargo_subtype) {

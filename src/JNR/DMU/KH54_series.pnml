@@ -9,102 +9,42 @@ alternative_sprites(spriteset_KH54_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,
 
 //KH54 JNR -500 Initial 
 spriteset (spriteset_KH54_500_inital,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_rev_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_revflip_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH54_500_inital,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Initial.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH54_500_rev_inital,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Initial.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH54_500_revflip_inital, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Initial.png")           {tmpl_std_rev(0, 25)}
 
 //KH54 JNR -500 Express  
 spriteset (spriteset_KH54_500_exp,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_rev_exp,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_revflip_exp,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH54_500_exp,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Express.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH54_500_rev_exp,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Express.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH54_500_revflip_exp, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Express.png")           {tmpl_std_rev(0, 25)}
 
 //KH54 JNR -500 Hanasaki Line (Nemuro Line)
 spriteset (spriteset_KH54_500_hanasaki,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_rev_hanasaki,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_revflip_hanasaki,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH54_500_hanasaki,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Hanasaki.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH54_500_rev_hanasaki,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Hanasaki.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH54_500_revflip_hanasaki, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Hanasaki.png")           {tmpl_std_rev(0, 25)}
 
 //KH54 -500 Ryuhyo Monogatari
 spriteset (spriteset_KH54_500_7,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_rev_7,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_revflip_7,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH54_500_7,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM507.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH54_500_rev_7,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM507.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH54_500_revflip_7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM507.png")           {tmpl_std_rev(0, 25)}
 
 //KH54 -500 Ryuhyo Monogatari
 spriteset (spriteset_KH54_500_8,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_rev_8,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH54_500_revflip_8,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH54_500_8,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM508.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH54_500_rev_8,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM508.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH54_500_revflip_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM508.png")           {tmpl_std_rev(0, 25)}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Year Variation Switches---*/
-/*---END OF SECTION---*/
-
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH54 JR Orange Vermillion
-switch(FEAT_TRAINS, PARENT, sw_KH54_500_inital_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH54_500_inital;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH54_500_exp_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH54_500_exp;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH54_500_hanasaki_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH54_500_hanasaki;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH54_500_7_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH54_500_7;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH54_500_8_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH54_500_8;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH54_gfx_main, cargo_subtype) {
-  0: sw_KH54_500_inital_gfx_frontback_revcheck;
-  1: sw_KH54_500_exp_gfx_frontback_revcheck;
-  2: sw_KH54_500_hanasaki_gfx_frontback_revcheck;
-  3: sw_KH54_500_7_gfx_frontback_revcheck;
-  4: sw_KH54_500_8_gfx_frontback_revcheck;
+  0: spriteset_KH54_500_inital;
+  1: spriteset_KH54_500_exp;
+  2: spriteset_KH54_500_hanasaki;
+  3: spriteset_KH54_500_7;
+  4: spriteset_KH54_500_8;
 }
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH54_subtypetext_main, cargo_subtype) {
@@ -116,12 +56,7 @@ switch(FEAT_TRAINS, SELF, sw_KH54_subtypetext_main, cargo_subtype) {
 }
 /*---END OF SECTION---*/
 
-
-
 //Coupling
-
-
-
 
 item(FEAT_TRAINS, dmu_kiha54) {
     property {

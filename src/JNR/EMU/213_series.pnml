@@ -13,8 +13,6 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_year_front_shonan, current_year){
 }
 /*---END OF SECTION---*/
 
-
-
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
 //213 JRwest
@@ -30,51 +28,31 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_flipcheck_jrw, vehicle_is_flipped
  0: sw_213_gfx_front_liverycheck_jrw;
  default: spriteset_213_back_jrw;
 }
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_frontback_revcheck_jrw, vehicle_is_reversed){
- 0: sw_213_gfx_frontback_flipcheck_jrw;
- default: sw_211group_gfx_rev_idcheck;
-}
 
 //213 Shonan
 switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_flipcheck_shonan, vehicle_is_flipped){
  0: sw_213_gfx_year_front_shonan;
  default: sw_213_gfx_year_back_shonan_pantograph;
 }
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
- 0: sw_213_gfx_frontback_flipcheck_shonan;
- default: sw_211group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Middle Car Switches---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
- 0: spriteset_213_mid_jrw;
- default: sw_211group_gfx_rev_idcheck;
-}
 
 //213 Shonan
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
- 0: spriteset_213_mid_shonan;
- default: sw_211group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar,  cargo_subtype) {
-1:  sw_213_gfx_mucar_revcheck_shonan;
-default:  sw_213_gfx_mucar_revcheck_jrw;
+1:  spriteset_213_mid_shonan;
+default:  spriteset_213_mid_jrw;
 }
 switch(FEAT_TRAINS, SELF, sw_213_gfx_main,  cargo_subtype) {
-1:  sw_213_gfx_frontback_revcheck_shonan;
-default:  sw_213_gfx_frontback_revcheck_jrw;
+1:  sw_213_gfx_frontback_flipcheck_shonan;
+default:  sw_213_gfx_frontback_flipcheck_jrw;
 }
 
 //Menu Switches
@@ -98,12 +76,10 @@ switch(FEAT_TRAINS, SELF, sw_213_subtypetext_main, cargo_subtype) {
 }
 /*---END OF SECTION---*/
 
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_213_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == emu_21156 ||vehicle_type_id == emu_213 || vehicle_type_id == emu_313 || vehicle_type_id == emu_311 || vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
-
 
 item(FEAT_TRAINS, emu_213) {
     property {

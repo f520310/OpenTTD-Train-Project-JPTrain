@@ -56,10 +56,6 @@ switch(FEAT_TRAINS, SELF, sw_225_0_gfx_frontback_flipcheck_0type, vehicle_is_fli
  0: sw_225_0_gfx_spriteset_225_0_front_0type;
  default: sw_225_0_gfx_pantocheck_0type;
 }
-switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_frontback_0type, vehicle_is_reversed){
- 0: sw_225_0_gfx_frontback_flipcheck_0type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantocheck_100type, position_in_vehid_chain){
  0: spriteset_225_0_back_100type;
 default: spriteset_225_0_back_100type;
@@ -68,29 +64,15 @@ switch(FEAT_TRAINS, SELF, sw_225_0_gfx_frontback_flipcheck_100type, vehicle_is_f
  0: spriteset_225_0_front_100type;
  default: sw_225_0_gfx_pantocheck_100type;
 }
-switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_frontback_100type, vehicle_is_reversed){
- 0: sw_225_0_gfx_frontback_flipcheck_100type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
-/*---END OF SECTION---*/
-/*---GFX: Middle Car Switches---*/
-switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_mucar_revcheck_mid_0type, vehicle_is_reversed){
- 0: sw_225_0_gfx_pantograph_pos_0type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_mucar_revcheck_mid_100type, vehicle_is_reversed){
- 0: sw_225_0_gfx_pantograph_pos_100type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 /*---GFX: Livery Refitting Switches---*/
 switch(FEAT_TRAINS, SELF, sw_225_0_gfx_mucar,  cargo_subtype) {
-0 : sw_225_0_gfx_mucar_revcheck_mid_0type;
-1 : sw_225_0_gfx_mucar_revcheck_mid_100type;
+0 : sw_225_0_gfx_pantograph_pos_0type;
+1 : sw_225_0_gfx_pantograph_pos_100type;
 }
 switch(FEAT_TRAINS, SELF, sw_225_0_gfx_main,  cargo_subtype) {
-0 : sw_225_0_gfx_frontback_0type;
-1 : sw_225_0_gfx_frontback_100type;
+0 : sw_225_0_gfx_frontback_flipcheck_0type;
+1 : sw_225_0_gfx_frontback_flipcheck_100type;
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/
@@ -107,7 +89,6 @@ switch(FEAT_TRAINS, SELF, sw_225_0_subtypetext_main, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_225_0_attach_vehid,  [vehicle_type_id == emu_221 || vehicle_type_id == emu_223_0 || vehicle_type_id == emu_223_1000 || vehicle_type_id == emu_225_0 || vehicle_type_id == emu_225_5000 || vehicle_type_id == mu_car]) {
 }
 /*---END OF SECTION---*/
-
 
 item(FEAT_TRAINS, emu_225_0) {
     property {

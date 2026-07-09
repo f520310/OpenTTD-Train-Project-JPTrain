@@ -1,47 +1,15 @@
-/*---GFX: Spritesets---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-
-/*---END OF SECTION---*/
-
 
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KHE120 Orange
-switch(FEAT_TRAINS, PARENT, sw_KHE120_orange_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KHE120_orange;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KHE120 Green
-switch(FEAT_TRAINS, PARENT, sw_KHE120_green_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KHE120_green;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KHE120_gfx_main, cargo_subtype) {
-  1: sw_KHE120_green_gfx_frontback_revcheck;
-  0: sw_KHE120_orange_gfx_frontback_revcheck;
+  1: spriteset_KHE120_green;
+  0: spriteset_KHE120_orange;
 }
 
 //Menu Switches
@@ -52,14 +20,10 @@ switch(FEAT_TRAINS, SELF, sw_KHE120_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KHE120_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
   0: return string(SAME_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_KHE120) {
     property {

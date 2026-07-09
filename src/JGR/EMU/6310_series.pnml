@@ -5,70 +5,19 @@ spriteset(spriteset_6310_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "
 
 //6310 std
 spriteset(spriteset_6310_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 48)}
-spriteset(spriteset_6310_rev_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 72)}
-spriteset(spriteset_6310_revflip_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l(0, 72)}
 
 //6310 new panto
 
 spriteset(spriteset_6310_newp_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 0)}
-spriteset(spriteset_6310_newp_rev_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 24)}
-spriteset(spriteset_6310_newp_revflip_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l(0, 24)}
 
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_6310_gfx_rev_single_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-1: spriteset_6310_newp_rev_single;
-0: spriteset_6310_rev_single;
-}
-switch(FEAT_TRAINS,SELF, sw_6310_gfx_revflip_single_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-1: spriteset_6310_newp_revflip_single;
-0: spriteset_6310_revflip_single;
-}
-
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_6310_gfx_rev_single_flippedcheck, vehicle_is_flipped) {
-  1: sw_6310_gfx_rev_single_livery;
- default: sw_6310_gfx_revflip_single_livery;
-}
-
-//ID Testing
-switch(FEAT_TRAINS, SELF, sw_6310_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
-  2064: sw_6310_gfx_rev_single_flippedcheck;
-}
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
-switch(FEAT_TRAINS, PARENT, sw_6310_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_6310_single;
- default: sw_6310_gfx_rev_idcheck;
-}
-
-switch(FEAT_TRAINS, PARENT, sw_6310_newp_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_6310_newp_single;
- default: sw_6310_gfx_rev_idcheck;
-}
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_6310_gfx_main,  cargo_subtype) {
-  1: sw_6310_newp_gfx_frontback_revcheck;
-  0: sw_6310_gfx_frontback_revcheck;
+  1: spriteset_6310_newp_single;
+  0: spriteset_6310_single;
 }
 
 //Menu
@@ -79,14 +28,10 @@ switch(FEAT_TRAINS, SELF, sw_6310_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_6310_attach_vehid, [vehicle_type_id == emu_6310]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, emu_6310) {
     property {

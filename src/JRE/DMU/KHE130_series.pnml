@@ -1,53 +1,17 @@
-/*---GFX: Spritesets---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-
-/*---END OF SECTION---*/
-
 
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KHE130 Suigun
-switch(FEAT_TRAINS, PARENT, sw_KHE130_suigun_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KHE130_suigun;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KHE130 Kurui
-switch(FEAT_TRAINS, PARENT, sw_KHE130_kurui_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KHE130_kurui;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KHE130 Hachi
-switch(FEAT_TRAINS, PARENT, sw_KHE130_hachi_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KHE130_hachi;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KHE130_gfx_main, cargo_subtype) {
-  2: sw_KHE130_hachi_gfx_frontback_revcheck;
-  1: sw_KHE130_kurui_gfx_frontback_revcheck;
-  0: sw_KHE130_suigun_gfx_frontback_revcheck;
+  2: spriteset_KHE130_hachi;
+  1: spriteset_KHE130_kurui;
+  0: spriteset_KHE130_suigun;
 }
 
 //Menu Switches
@@ -59,14 +23,10 @@ switch(FEAT_TRAINS, SELF, sw_KHE130_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KHE130_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
   0: return string(SAME_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_KHE130) {
     property {

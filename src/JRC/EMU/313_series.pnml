@@ -12,8 +12,6 @@ switch(FEAT_TRAINS,SELF, sw_313_gfx_pantograph_pos_check, num_vehs_in_vehid_chai
 }
 /*---END OF SECTION---*/
 
-
-
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //313 Tokai
 switch(FEAT_TRAINS, SELF, sw_313_gfx_back_livery,  cargo_subtype) {
@@ -24,27 +22,13 @@ switch(FEAT_TRAINS, SELF, sw_313_gfx_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_313_front;
  default: sw_313_gfx_back_livery;
 }
-switch(FEAT_TRAINS, PARENT, sw_313_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_313_gfx_frontback_flipcheck;
- default: sw_211group_gfx_rev_idcheck;
-}
-
-
 
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Middle Car Switches---*/
 
 //313 Tokai
-switch(FEAT_TRAINS, PARENT, sw_313_gfx_mucar_revcheck, vehicle_is_reversed){
- 0: sw_313_gfx_pantograph_pos_check;
- default: sw_211group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Menu Switches
@@ -62,7 +46,6 @@ switch(FEAT_TRAINS, SELF, sw_313_subtypetext_main, cargo_subtype) {
   switch(FEAT_TRAINS, SELF, sw_313_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == emu_21156 ||vehicle_type_id == emu_213 || vehicle_type_id == emu_313 || vehicle_type_id == emu_311 || vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
-
 
 item(FEAT_TRAINS, emu_313) {
     property {
@@ -104,7 +87,7 @@ item(FEAT_TRAINS, emu_313) {
     }
     /*Graphics and Callbacks*/
       graphics {
-        default:                sw_313_gfx_frontback_revcheck;
+        default:                sw_313_gfx_frontback_flipcheck;
 		    purchase:               spriteset_313_purchase;
 		    additional_text:	      
         string(STR_TRAIN_DESC,
@@ -121,7 +104,7 @@ item(FEAT_TRAINS, emu_313) {
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
-        default:                      sw_313_gfx_mucar_revcheck;
+        default:                      sw_313_gfx_pantograph_pos_check;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cargo_age_period:             param_decay_local;

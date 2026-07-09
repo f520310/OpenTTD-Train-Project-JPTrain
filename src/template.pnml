@@ -86,10 +86,6 @@ template tmpl_std_panto25_rev(x,y){
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
 }
 
-
-
-
-
 /*Special for RipperKR*/
 template tmpl_rpstd(x,y){
 [x, 	 y+4,	8, 	24,		-3, 	-16] //short
@@ -175,15 +171,6 @@ template tmpl_rpstdw_panto25_rev(x,y){
 	[x +95,  y,		23,	20,		-5, 	-13] //dia2
 }
 
-
-
-
-
-
-
-
-
-
 /*Unused
 template tmpl_dhloco(x,y){
 [x, 		 y,	8, 	24,		-3, 	-13] //short
@@ -218,7 +205,6 @@ template tmpl_std_orginal(x,y){
 [x+153,  y,	22,	20,		-5, 	-11]
 }
 */
-
 
 template tmpl_28px_7l(x,y){
 [x, 	 y,	8, 	23,		-3, 	-19-2] //short A
@@ -261,7 +247,6 @@ template tmpl_dh_28px_7l_rev(x,y){
 [x +30,  y,	28,	15,		-14,	-11] //long C
 [x +59,  y,	20,	19,		-5, 	-12] //dia2
 }
-
 
 template tmpl_20px_5l(x,y){
 [x, 	 y,	8, 	19,		-3, 	-19] //short A

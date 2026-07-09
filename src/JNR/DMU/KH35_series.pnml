@@ -58,9 +58,7 @@ alternative_sprites(spriteset_KH35_revflip_red2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 
 
 
-/*---GFX: Train Reversing Switches---*/
 
-/*---END OF SECTION---*/
 
 
 
@@ -107,10 +105,6 @@ switch(FEAT_TRAINS, SELF, sw_KH35_jnr_gfx_frontback_revcheck_posfront, position_
  0: sw_KH35_jnr_gfx_frontback_flipcheck_posfront;
  default: sw_KH35_jnr_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH35_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH35_jnr_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -122,7 +116,7 @@ switch(FEAT_TRAINS, PARENT, sw_KH35_jnr_gfx_frontback_revcheck, vehicle_is_rever
 //Main Switches
 /*
 switch(FEAT_TRAINS, SELF, sw_KH35_gfx_main, cargo_subtype) {
-  0: sw_KH35_jnr_gfx_frontback_revcheck;
+  0: sw_KH35_jnr_gfx_frontback_revcheck_posfront;
 }*/
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH35_subtypetext_main, cargo_subtype) {
@@ -175,7 +169,7 @@ item(FEAT_TRAINS, dmu_kiha35) {
     }
     /*Graphics and Callbacks*/
       graphics {
-        default:                sw_KH35_jnr_gfx_frontback_revcheck;
+        default:                sw_KH35_jnr_gfx_frontback_revcheck_posfront;
 		    purchase:               spriteset_KH35_purchase;
 		    additional_text:	      
         string(STR_TRAIN_DESC,

@@ -5,64 +5,19 @@ alternative_sprites(spriteset_KH1000_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BP
 
 //KH1000 JR Orange Vermillion
 spriteset (spriteset_KH1000_inital,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH1000_rev_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH1000_revflip_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH1000_inital,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRS/dmuKH1000/1000-1-1.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_KH1000_rev_inital,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRS/dmuKH1000/1000-1-1.png")           {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_KH1000_revflip_inital, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRS/dmuKH1000/1000-1-1.png")           {tmpl_std(0, 26)}
 
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH1000_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH1000_rev_inital;
-}
-switch(FEAT_TRAINS,SELF, sw_KH1000_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH1000_revflip_inital;
-}
-
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH1000_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH1000_gfx_rev_livery;
- default: sw_KH1000_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH1000_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1517: sw_KH1000_gfx_rev_flippedcheck;
-}
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH1000 JR Orange Vermillion
-switch(FEAT_TRAINS, PARENT, sw_KH1000_inital_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH1000_inital;
- default: sw_KH1000_gfx_rev_flippedcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH1000_gfx_main, cargo_subtype) {
-  0: sw_KH1000_inital_gfx_frontback_revcheck;
+  0: spriteset_KH1000_inital;
 }
 
 //Menu Switches
@@ -72,14 +27,10 @@ switch(FEAT_TRAINS, SELF, sw_KH1000_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH1000_attach_vehid, [vehicle_type_id == dmu_KH1000]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_KH1000) {
     property {

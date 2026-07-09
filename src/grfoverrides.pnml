@@ -98,8 +98,6 @@ if (param_japansetdisable == 1) {
 	}
 }
 
-
-
 /* 
 JapanSet3 IDs
 
@@ -112,18 +110,7 @@ JapanSet3 IDs
 07 40 Series EMU
 08 EF10 Electric
 
-
 */
-
-
-
-
-
-
-
-
-
-
 
 /*
 NATS DUPLICATION DEPRECIATED
@@ -210,8 +197,6 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 		climates_available: NO_CLIMATE;
 	}
 }
-
-
 
 //engine_override("JD\A1\E1"); jpsecret
 //jnr_ef63, 1040

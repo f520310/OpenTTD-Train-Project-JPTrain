@@ -11,18 +11,9 @@ spriteset (spriteset_E331_mid_nonartic,	  "gfx/JRE/emuE331/E331.png")          	
 spriteset (spriteset_E331_mid_artic,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l(0, 72) }
 spriteset (spriteset_E331_mid_articpan,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l(0, 92) }
 
-spriteset (spriteset_E331_front_rev,	       	"gfx/JRE/emuE331/E331.png")          	{ tmpl_dh_28px_7l_rev(0, 0) }
-spriteset (spriteset_E331_back_rev,	        	"gfx/JRE/emuE331/E331.png")            { tmpl_dh_28px_7l_rev(0, 24) }
-spriteset (spriteset_E331_mid_nonartic_rev,	  "gfx/JRE/emuE331/E331.png")          	{ tmpl_dh_28px_7l_rev(0, 48) }
-spriteset (spriteset_E331_mid_artic_rev,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l_rev(0, 72) }
-spriteset (spriteset_E331_mid_articpan_rev,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l_rev(0, 92) }
-
 spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_dh_28px_7l_rev(0, 24) }
-spriteset (spriteset_E331_back_panto_rev,	        	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_dh_28px_7l(0, 0) }
 
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Pantograph Positions---*/
 //E331-0
@@ -41,7 +32,7 @@ switch(FEAT_TRAINS, SELF, sw_E331_gfx_pos_flipped_car2, [position_in_consist == 
   default: sw_E331_gfx_pantograph_pos_artics;
 }
 switch(FEAT_TRAINS, SELF, sw_E331_gfx_pos_flipped_car1, [position_in_consist == (num_vehs_in_consist/2)]) {
-  1: spriteset_E331_mid_nonartic_rev;
+  1: spriteset_E331_mid_nonartic;
   default: sw_E331_gfx_pos_flipped_car2;
 }
 switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantograph_pos_lengthsw, num_vehs_in_consist%2) {
@@ -55,140 +46,20 @@ switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantograph_pos, num_vehs_in_consist) {
 
 /*---END OF SECTION---*/
 
-
-
-/*---GFX: Train Reversing Switches---*/
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_cab_front, vehicle_is_flipped) {
-  1: spriteset_E331_back_rev;
- default: spriteset_E331_front_rev;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_cab_back, vehicle_is_flipped) {
-  1: spriteset_E331_front_rev;
- default: spriteset_E331_front;
-}
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_mu_artic_panto, vehicle_is_flipped) {
-  1: spriteset_E331_mid_articpan;
- default: spriteset_E331_mid_articpan_rev;
-}
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_mu_artic_nopanto, vehicle_is_flipped) {
-  1: spriteset_E331_mid_artic;
- default: spriteset_E331_mid_artic_rev;
-}
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_mu_noartic, vehicle_is_flipped) {
-  1: spriteset_E331_mid_nonartic;
- default: spriteset_E331_mid_nonartic_rev;
-}
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_mu_noartic_rev, vehicle_is_flipped) {
-  1: spriteset_E331_mid_nonartic_rev;
- default: spriteset_E331_mid_nonartic;
-}
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_flippedcheck_cab_back_pantograph, vehicle_is_flipped) {
-  1: spriteset_E331_back_panto_rev;
- default: spriteset_E331_back_panto_rev;
-}
-
-//Pantograph Position Testing (not looking at opposite as unit is not able to work in multiple)
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_pantograph_pos_artic_default, position_in_vehid_chain_from_end%7){
-  1: sw_E331_gfx_rev_flippedcheck_mu_artic_panto;
-  default: sw_E331_gfx_rev_flippedcheck_mu_artic_nopanto;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_pantograph_pos_artics, num_vehs_in_consist){
-  0..3: sw_E331_gfx_rev_flippedcheck_mu_artic_panto;
-  default: sw_E331_gfx_rev_pantograph_pos_artic_default;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_pos_flipped_car2, [position_in_consist == ((num_vehs_in_consist/2)-1)]) {
-  1: sw_E331_gfx_rev_flippedcheck_mu_noartic_rev;
-  default: sw_E331_gfx_rev_pantograph_pos_artics;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_pos_flipped_car1, [position_in_consist == (num_vehs_in_consist/2)]) {
-  1: sw_E331_gfx_rev_flippedcheck_mu_noartic;
-  default: sw_E331_gfx_rev_pos_flipped_car2;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_pantograph_pos_lengthsw, num_vehs_in_consist%2) { //check even or odd
-  1: sw_E331_gfx_rev_pantograph_pos_artics;
-  0: sw_E331_gfx_rev_pos_flipped_car1;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_pantograph_pos, num_vehs_in_consist){ //look at num_vehicle_consist
-  0..7:sw_E331_gfx_rev_pantograph_pos_artics;
-  default: sw_E331_gfx_rev_pantograph_pos_lengthsw;
-}
-
-//Back Car Pantograph Testing
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain
- 0: sw_E331_gfx_rev_flippedcheck_cab_back;
- default: sw_E331_gfx_rev_flippedcheck_cab_back_pantograph;
-}
-
-//Front/Back Car Position Testing
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_frontback_nomucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_E331_gfx_rev_flippedcheck_cab_front;
-  0:sw_E331_gfx_rev_back_pantocheck;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_frontback_aftermucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_E331_gfx_rev_back_pantocheck;
-  0:sw_E331_gfx_rev_flippedcheck_cab_front;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_frontback_mucarcheck, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
-STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
-var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000:sw_E331_gfx_rev_frontback_aftermucars;
-  default:sw_E331_gfx_rev_frontback_nomucars;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2022:sw_E331_gfx_rev_frontback_mucarcheck;
-  1000:sw_E331_gfx_rev_flippedcheck_cab_front;
-  default:sw_E331_gfx_rev_back_pantocheck;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2022:sw_E331_gfx_rev_frontback_sameid;
-  1000:sw_E331_gfx_rev_back_pantocheck;
-  default:sw_E331_gfx_rev_flippedcheck_cab_front;
-}
-
-//ID Testing
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
-  1000: sw_E331_gfx_rev_pantograph_pos;
-  2022: sw_E331_gfx_rev_frontback;
-}
-/*---END OF SECTION---*/
-
-
-
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //E331-0 Keto
 switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantocheck, position_in_vehid_chain){
- 0: spriteset_E331_back_rev;
+ 0: spriteset_E331_back;
  default: spriteset_E331_back_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_E331_gfx_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_E331_front;
  default: sw_E331_gfx_pantocheck;
 }
-switch(FEAT_TRAINS, PARENT, sw_E331_gfx_frontback, vehicle_is_reversed){
- 0: sw_E331_gfx_frontback_flipcheck;
- default: sw_E331_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Middle Car Switches---*/
 //E331-0 Keto
-switch(FEAT_TRAINS, PARENT, sw_E331_gfx_mucar_revcheck, vehicle_is_reversed){
- 0: sw_E331_gfx_pantograph_pos;
- default: sw_E331_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 //Coupling
@@ -254,7 +125,7 @@ item(FEAT_TRAINS, emu_E331) {
     }
     /*Graphics and Callbacks*/
       graphics {
-        default:                sw_E331_gfx_frontback;
+        default:                sw_E331_gfx_frontback_flipcheck;
 		    purchase:               spriteset_E331_purchase;
 		    additional_text:	      
         string(STR_TRAIN_DESC,
@@ -270,7 +141,7 @@ item(FEAT_TRAINS, emu_E331) {
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
-        default:                      sw_E331_gfx_mucar_revcheck;
+        default:                      sw_E331_gfx_pantograph_pos;
         cargo_capacity:               param_capacity_local-30;
         loading_speed:                param_loading_3D;
         cargo_age_period:             param_decay_local;

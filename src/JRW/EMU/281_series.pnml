@@ -36,25 +36,14 @@ switch(FEAT_TRAINS, SELF, sw_281_gfx_frontback_flipcheck_Haruka, vehicle_is_flip
   0: sw_281_gfx_frontcargr_Haruka;
   default: sw_281_gfx_pantocheck_Haruka;
 }
-switch(FEAT_TRAINS, PARENT, sw_281_gfx_frontback_Haruka, vehicle_is_reversed){
-  0: sw_281_gfx_frontback_flipcheck_Haruka;
-  default: sw_JRW271281group_gfx_rev_idcheck;
-}
-/*---END OF SECTION---*/
-
-/*---MID CAR SWITCH BLOCK---*/
-switch(FEAT_TRAINS, PARENT, sw_281_gfx_mucar_revcheck_mid_Haruka, vehicle_is_reversed){
-  0: sw_281_gfx_pantograph_pos_Haruka;
-  default: sw_JRW271281group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 /*---LIVERY REFIT BLOCK---*/
 switch(FEAT_TRAINS, SELF, sw_281_gfx_mucar,  cargo_subtype) {
-  0: sw_281_gfx_mucar_revcheck_mid_Haruka;
+  0: sw_281_gfx_pantograph_pos_Haruka;
 }
 switch(FEAT_TRAINS, SELF, sw_281_gfx_main,  cargo_subtype) {
-  0: sw_281_gfx_frontback_Haruka;
+  0: sw_281_gfx_frontback_flipcheck_Haruka;
 }
 /*---END OF SECTION---*/
 

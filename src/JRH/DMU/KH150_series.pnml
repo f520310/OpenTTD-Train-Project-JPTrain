@@ -4,84 +4,25 @@ spriteset(spriteset_KH150_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "
 
 //KH150 Asahikawa
 spriteset(spriteset_KH150_asa0,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/0_asahikawa.png")           {tmpl_std(0, 25)}
-spriteset(spriteset_KH150_rev_asa0,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/0_asahikawa.png")           {tmpl_std(0, 0)}
-spriteset(spriteset_KH150_revflip_asa0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/0_asahikawa.png")           {tmpl_std_rev(0, 0)}
 
 //KH150 Asahikawa -100
 spriteset(spriteset_KH150_asa100,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/100.png")           {tmpl_std(0, 25)}
-spriteset(spriteset_KH150_rev_asa100,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/100.png")           {tmpl_std(0, 0)}
-spriteset(spriteset_KH150_revflip_asa100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/100.png")           {tmpl_std_rev(0, 0)}
 
 //KH150 Naebo
 spriteset(spriteset_KH150_naebo0,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/0_naebo.png")           {tmpl_std(0, 25)}
-spriteset(spriteset_KH150_rev_naebo0,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/0_naebo.png")           {tmpl_std(0, 0)}
-spriteset(spriteset_KH150_revflip_naebo0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH150/0_naebo.png")           {tmpl_std_rev(0, 0)}
 
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-/*
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH150_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  1: spriteset_KH150_rev_orange;
-  0: spriteset_KH150_rev_orangecream;
-}
-switch(FEAT_TRAINS,SELF, sw_KH150_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  1: spriteset_KH150_revflip_orange;
-  0: spriteset_KH150_revflip_orangecream;
-}
-
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH150_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH150_gfx_rev_livery;
- default: sw_KH150_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH150_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1500: sw_KH150_gfx_rev_flippedcheck;
-}
-*/
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH150 JR Orange Vermillion
-switch(FEAT_TRAINS, PARENT, sw_KH150_asa0_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH150_asa0;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH150_asa100_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH150_asa100;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH150_naebo0_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH150_naebo0;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH150_gfx_main, cargo_subtype) {
-  2: sw_KH150_naebo0_gfx_frontback_revcheck;
-  1: sw_KH150_asa100_gfx_frontback_revcheck;
-  0: sw_KH150_asa0_gfx_frontback_revcheck;
+  2: spriteset_KH150_naebo0;
+  1: spriteset_KH150_asa100;
+  0: spriteset_KH150_asa0;
 }
 
 //Menu Switches
@@ -93,14 +34,10 @@ switch(FEAT_TRAINS, SELF, sw_KH150_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH150_attach_vehid, [vehicle_type_id == dmu_kiha130]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_kiha150) {
     property {

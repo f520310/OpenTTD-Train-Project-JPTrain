@@ -1,71 +1,23 @@
-/*---GFX: Spritesets---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-
-/*---END OF SECTION---*/
-
 
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH110 JR Green
-switch(FEAT_TRAINS, PARENT, sw_KH110_green_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_green;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KH110 JR Green Black Front
-switch(FEAT_TRAINS, PARENT, sw_KH110_greenblack_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_greenblack;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KH110 Rikku East Line
-switch(FEAT_TRAINS, PARENT, sw_KH110_rikku_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_rikku;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KH110 Akita Relay
-switch(FEAT_TRAINS, PARENT, sw_KH110_akita_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_akita;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KH110 VOITURE AMITIE
-switch(FEAT_TRAINS, PARENT, sw_KH110_voitami_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_voitami;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 //KH110 Metropolitan Koumi Line Special
-switch(FEAT_TRAINS, PARENT, sw_KH110_metrored_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_metrored;
- default: sw_JREKHgroup_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH110_gfx_main, cargo_subtype) {
-  5: sw_KH110_metrored_gfx_frontback_revcheck;
-  4: sw_KH110_voitami_gfx_frontback_revcheck;
-  3: sw_KH110_akita_gfx_frontback_revcheck;
-  2: sw_KH110_rikku_gfx_frontback_revcheck;
-  1: sw_KH110_greenblack_gfx_frontback_revcheck;
-  0: sw_KH110_green_gfx_frontback_revcheck;
+  5: spriteset_KH110_metrored;
+  4: spriteset_KH110_voitami;
+  3: spriteset_KH110_akita;
+  2: spriteset_KH110_rikku;
+  1: spriteset_KH110_greenblack;
+  0: spriteset_KH110_green;
 }
 
 //Menu Switches
@@ -80,14 +32,10 @@ switch(FEAT_TRAINS, SELF, sw_KH110_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH110_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_KH110) {
     property {

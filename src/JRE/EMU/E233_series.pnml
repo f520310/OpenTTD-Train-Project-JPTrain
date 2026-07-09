@@ -175,227 +175,140 @@ switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_nanbu, num_vehs_in_vehid_cha
   default: sw_E233_gfx_pantograph_pos_nanbu_default;
 }
 
-
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
 //E233-0 Chou Line
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_chou, position_in_vehid_chain){
- 0: spriteset_E233_back_chou_rev;
+ 0: spriteset_E233_back_chou;
  default: spriteset_E233_backpan_chou;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_chou, vehicle_is_flipped){
  0: spriteset_E233_front_chou;
  default: sw_E233_gfx_pantocheck_chou;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_chou, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_chou;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-1000 Keihin-Touhoku Line
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_kt, position_in_vehid_chain){
- 0: spriteset_E233_back_kt_rev;
+ 0: spriteset_E233_back_kt;
  default: spriteset_E233_backpan_kt;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_kt, vehicle_is_flipped){
  0: spriteset_E233_front_kt;
  default: sw_E233_gfx_pantocheck_kt;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_kt, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_kt;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //2000 Joban
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_2000, position_in_vehid_chain){
- 0: spriteset_E233_back_2000_rev;
+ 0: spriteset_E233_back_2000;
  default: spriteset_E233_back_2000;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_2000, vehicle_is_flipped){
  0: spriteset_E233_front_2000;
  default: sw_E233_gfx_pantocheck_2000;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_2000, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_2000;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-3000 Tokaido
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_tk, position_in_vehid_chain){
- 0: spriteset_E233_back_tk_rev;
+ 0: spriteset_E233_back_tk;
  default: spriteset_E233_backpan_tk;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_tk, vehicle_is_flipped){
  0: spriteset_E233_front_tk;
  default: sw_E233_gfx_pantocheck_tk;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_tk, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_tk;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-5000 Keiyo Line
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_keiyo, position_in_vehid_chain){
- 0: spriteset_E233_back_keiyo_rev;
+ 0: spriteset_E233_back_keiyo;
  default: spriteset_E233_backpan_keiyo;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_keiyo, vehicle_is_flipped){
  0: spriteset_E233_front_keiyo;
  default: sw_E233_gfx_pantocheck_keiyo;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_keiyo, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_keiyo;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-6000 Yokoyama Line
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_yoko, position_in_vehid_chain){
- 0: spriteset_E233_back_yoko_rev;
+ 0: spriteset_E233_back_yoko;
  default: spriteset_E233_backpan_yoko;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_yoko, vehicle_is_flipped){
  0: spriteset_E233_front_yoko;
  default: sw_E233_gfx_pantocheck_yoko;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_yoko, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_yoko;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-7000 Saikyo Line
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_saikyo, position_in_vehid_chain){
- 0: spriteset_E233_back_saikyo_rev;
+ 0: spriteset_E233_back_saikyo;
  default: spriteset_E233_backpan_saikyo;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_saikyo, vehicle_is_flipped){
  0: spriteset_E233_front_saikyo;
  default: sw_E233_gfx_pantocheck_saikyo;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_saikyo, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_saikyo;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-8000 Nannbu Line
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_nanbu, position_in_vehid_chain){
- 0: spriteset_E233_back_nanbu_rev;
+ 0: spriteset_E233_back_nanbu;
  default: spriteset_E233_backpan_nanbu;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_nanbu, vehicle_is_flipped){
  0: spriteset_E233_front_nanbu;
  default: sw_E233_gfx_pantocheck_nanbu;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_nanbu, vehicle_is_reversed){
- 0: sw_E233_gfx_frontback_flipcheck_nanbu;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Middle Car Switches---*/
 
 //E233-0 Chou Line
 /*
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_dd_chou, vehicle_is_reversed){
- 0: spriteset_E233_middd_chou;
- default: sw_E231group_gfx_rev_idcheck;
-}
 */
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_chou, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_chou;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-1000 Keihin-Touhoku Line
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_kt, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_kt;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //2000 Joban
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_2000, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_2000;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-3000 Tokaido
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_dd_tk, vehicle_is_reversed){
- 0: spriteset_E233_middd_tk;
- default: sw_E231group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_sd_tk, vehicle_is_reversed){
- 0: spriteset_E233_middle_tk;
- default: sw_E231group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_tk1, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_tk1;
- default: sw_E231group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_tk2, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_tk2;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-5000 Keiyo Line
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_keiyo, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_keiyo;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-6000 Yokoyama Line
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_yoko, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_yoko;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-7000 Saikyo Line
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_saikyo, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_saikyo;
- default: sw_E231group_gfx_rev_idcheck;
-}
 
 //E233-8000 Nannbu Line
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_nanbu, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_nanbu;
- default: sw_E231group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_mucar,  cargo_subtype) {
-  //10: sw_E233_gfx_mucar_revcheck_dd_tk;
-  //9: sw_E233_gfx_mucar_revcheck_sd_tk;
+  //10: spriteset_E233_middd_tk;
+  //9: spriteset_E233_middle_tk;
   //8: sw_E233_gfx_mucar_revcheck_mid_tk;
-  8: sw_E233_gfx_mucar_revcheck_mid_nanbu;
-  7: sw_E233_gfx_mucar_revcheck_mid_saikyo;
-  6: sw_E233_gfx_mucar_revcheck_mid_yoko;
-  5: sw_E233_gfx_mucar_revcheck_mid_keiyo;
-  4: sw_E233_gfx_mucar_revcheck_mid_2000;
-  3: sw_E233_gfx_mucar_revcheck_mid_tk1;
-  2: sw_E233_gfx_mucar_revcheck_mid_tk2;
-  1: sw_E233_gfx_mucar_revcheck_mid_kt;
-  0: sw_E233_gfx_mucar_revcheck_mid_chou;
+  8: sw_E233_gfx_pantograph_pos_nanbu;
+  7: sw_E233_gfx_pantograph_pos_saikyo;
+  6: sw_E233_gfx_pantograph_pos_yoko;
+  5: sw_E233_gfx_pantograph_pos_keiyo;
+  4: sw_E233_gfx_pantograph_pos_2000;
+  3: sw_E233_gfx_pantograph_pos_tk1;
+  2: sw_E233_gfx_pantograph_pos_tk2;
+  1: sw_E233_gfx_pantograph_pos_kt;
+  0: sw_E233_gfx_pantograph_pos_chou;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_main,  cargo_subtype) {
-  8: sw_E233_gfx_frontback_nanbu;
-  7: sw_E233_gfx_frontback_saikyo;
-  6: sw_E233_gfx_frontback_yoko;
-  5: sw_E233_gfx_frontback_keiyo;
-  4: sw_E233_gfx_frontback_2000;
-  3: sw_E233_gfx_frontback_tk;
-  2: sw_E233_gfx_frontback_tk;
-  1: sw_E233_gfx_frontback_kt;
-  0: sw_E233_gfx_frontback_chou;
+  8: sw_E233_gfx_frontback_flipcheck_nanbu;
+  7: sw_E233_gfx_frontback_flipcheck_saikyo;
+  6: sw_E233_gfx_frontback_flipcheck_yoko;
+  5: sw_E233_gfx_frontback_flipcheck_keiyo;
+  4: sw_E233_gfx_frontback_flipcheck_2000;
+  3: sw_E233_gfx_frontback_flipcheck_tk;
+  2: sw_E233_gfx_frontback_flipcheck_tk;
+  1: sw_E233_gfx_frontback_flipcheck_kt;
+  0: sw_E233_gfx_frontback_flipcheck_chou;
 }
 
 //Menu Switches
@@ -426,14 +339,10 @@ switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_main, cargo_subtype) {
 }
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_E233_attach_vehid, [vehicle_type_id == emu_E233 || vehicle_type_id == emu_E231 || vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, emu_E233) {
     property {

@@ -100,10 +100,6 @@ switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_frontback_flipcheck_5000type, vehicle_
  0: sw_225_5000_gfx_spriteset_225_5000_front_5000type;
  default: sw_225_5000_gfx_pantocheck_5000type;
 }
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_frontback_5000type, vehicle_is_reversed){
- 0: sw_225_5000_gfx_frontback_flipcheck_5000type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_pantocheck_5100type_nw, position_in_vehid_chain){
  0: spriteset_225_5000_back_5100type_nw;
 default: spriteset_225_5000_back_5100type_nw;
@@ -111,10 +107,6 @@ default: spriteset_225_5000_back_5100type_nw;
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_frontback_flipcheck_5100type_nw, vehicle_is_flipped){
  0: spriteset_225_5000_front_5100type_nw;
  default: sw_225_5000_gfx_pantocheck_5100type_nw;
-}
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_frontback_5100type_nw, vehicle_is_reversed){
- 0: sw_225_5000_gfx_frontback_flipcheck_5100type_nw;
- default: sw_JRW22group_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_pantocheck_5100type_ww, position_in_vehid_chain){
  0: spriteset_225_5000_back_5100type_ww;
@@ -124,10 +116,6 @@ switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_frontback_flipcheck_5100type_ww, vehic
  0: spriteset_225_5000_front_5100type_ww;
  default: sw_225_5000_gfx_pantocheck_5100type_ww;
 }
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_frontback_5100type_ww, vehicle_is_reversed){
- 0: sw_225_5000_gfx_frontback_flipcheck_5100type_ww;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_pantocheck_6000type, position_in_vehid_chain){
  0: sw_225_5000_gfx_spriteset_225_5000_back_6000type;
 default: sw_225_5000_gfx_spriteset_225_5000_back_6000type;
@@ -136,41 +124,19 @@ switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_frontback_flipcheck_6000type, vehicle_
  0: sw_225_5000_gfx_spriteset_225_5000_front_6000type;
  default: sw_225_5000_gfx_pantocheck_6000type;
 }
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_frontback_6000type, vehicle_is_reversed){
- 0: sw_225_5000_gfx_frontback_flipcheck_6000type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
-/*---END OF SECTION---*/
-/*---GFX: Middle Car Switches---*/
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_mucar_revcheck_mid_5000type, vehicle_is_reversed){
- 0: sw_225_5000_gfx_pantograph_pos_5000type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_mucar_revcheck_mid_5100type_nw, vehicle_is_reversed){
- 0: sw_225_5000_gfx_pantograph_pos_5100type_nw;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_mucar_revcheck_mid_5100type_ww, vehicle_is_reversed){
- 0: sw_225_5000_gfx_pantograph_pos_5100type_ww;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_225_5000_gfx_mucar_revcheck_mid_6000type, vehicle_is_reversed){
- 0: sw_225_5000_gfx_pantograph_pos_6000type;
- default: sw_JRW22group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 /*---GFX: Livery Refitting Switches---*/
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_mucar,  cargo_subtype) {
-0 : sw_225_5000_gfx_mucar_revcheck_mid_5000type;
-1 : sw_225_5000_gfx_mucar_revcheck_mid_5100type_nw;
-2 : sw_225_5000_gfx_mucar_revcheck_mid_5100type_ww;
-3 : sw_225_5000_gfx_mucar_revcheck_mid_6000type;
+0 : sw_225_5000_gfx_pantograph_pos_5000type;
+1 : sw_225_5000_gfx_pantograph_pos_5100type_nw;
+2 : sw_225_5000_gfx_pantograph_pos_5100type_ww;
+3 : sw_225_5000_gfx_pantograph_pos_6000type;
 }
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_main,  cargo_subtype) {
-0 : sw_225_5000_gfx_frontback_5000type;
-1 : sw_225_5000_gfx_frontback_5100type_nw;
-2 : sw_225_5000_gfx_frontback_5100type_ww;
-3 : sw_225_5000_gfx_frontback_6000type;
+0 : sw_225_5000_gfx_frontback_flipcheck_5000type;
+1 : sw_225_5000_gfx_frontback_flipcheck_5100type_nw;
+2 : sw_225_5000_gfx_frontback_flipcheck_5100type_ww;
+3 : sw_225_5000_gfx_frontback_flipcheck_6000type;
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/
@@ -192,8 +158,6 @@ switch(FEAT_TRAINS, SELF, sw_225_5000_attach_vehid,  [vehicle_type_id == emu_221
  0: return string(MU_UNIQUE);
 }
 /*---END OF SECTION---*/
-
-
 
 item(FEAT_TRAINS, emu_225_5000) {
     property {

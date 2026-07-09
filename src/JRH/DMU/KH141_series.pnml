@@ -64,9 +64,7 @@ alternative_sprites(spriteset_KH143_revflip_JRH,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 
 
 
-/*---GFX: Train Reversing Switches---*/
 
-/*---END OF SECTION---*/
 
 
 
@@ -88,10 +86,6 @@ switch(FEAT_TRAINS, SELF, sw_KH141_GREEN_gfx_frontback_revcheck_posfront, positi
  0: sw_KH141_GREEN_gfx_frontback_flipcheck_posfront;
  default: sw_KH141_GREEN_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH141_GREEN_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH141_GREEN_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 //KH141 JRH
 switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
  0: spriteset_KH142_revflip_JRH;
@@ -108,10 +102,6 @@ switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_revcheck_posback, position_
 switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_revcheck_posfront, position_in_consist){
  0: sw_KH141_JRH_gfx_frontback_flipcheck_posfront;
  default: sw_KH141_JRH_gfx_frontback_revcheck_posback;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH141_JRH_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH141_JRH_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
 }
 //KH143 JRH
 switch(FEAT_TRAINS, SELF, sw_KH143_JRH_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
@@ -130,10 +120,6 @@ switch(FEAT_TRAINS, SELF, sw_KH143_JRH_gfx_frontback_revcheck_posfront, position
  0: sw_KH143_JRH_gfx_frontback_flipcheck_posfront;
  default: sw_KH143_JRH_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH143_JRH_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH143_JRH_gfx_frontback_revcheck_posfront;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -144,9 +130,9 @@ switch(FEAT_TRAINS, PARENT, sw_KH143_JRH_gfx_frontback_revcheck, vehicle_is_reve
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH141_gfx_main, cargo_subtype) {
-  0: sw_KH141_GREEN_gfx_frontback_revcheck;
-  1: sw_KH141_JRH_gfx_frontback_revcheck;
-  2: sw_KH143_JRH_gfx_frontback_revcheck;
+  0: sw_KH141_GREEN_gfx_frontback_revcheck_posfront;
+  1: sw_KH141_JRH_gfx_frontback_revcheck_posfront;
+  2: sw_KH143_JRH_gfx_frontback_revcheck_posfront;
 }
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH141_subtypetext_main, cargo_subtype) {

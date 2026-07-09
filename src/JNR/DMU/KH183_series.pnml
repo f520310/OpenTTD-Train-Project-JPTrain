@@ -59,68 +59,7 @@ alternative_sprites(spriteset_KH184_mid_rev_JNR,           ZOOM_LEVEL_NORMAL, BI
 
 /*---END OF SECTION---*/
 
-/*---GFX: Train Reversing Switches---*/
-switch(FEAT_TRAINS,SELF, sw_KH183_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH183_0_rev_JNR;
-  1: spriteset_KH183_100_rev_JNR;
-  2: spriteset_KH183_100_rev_JNR2;
-}
-switch(FEAT_TRAINS,SELF, sw_KH183_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH183_0_revflip_JNR;
-  1: spriteset_KH183_100_revflip_JNR;
-  2: spriteset_KH183_100_revflip_JNR2;
-}
-switch(FEAT_TRAINS,SELF, sw_KH183_gfx_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH183_0_JNR;
-  1: spriteset_KH183_100_JNR;
-  2: spriteset_KH183_100_JNR2;
-}
-switch(FEAT_TRAINS,SELF, sw_KH183_gfx_frontflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH183_0_frontflip_JNR;
-  1: spriteset_KH183_100_frontflip_JNR;
-  2: spriteset_KH183_100_frontflip_JNR2;
-}
-switch(FEAT_TRAINS,SELF, sw_KH183_gfx_mid_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH182_mid_rev_JNR;
-}
-switch(FEAT_TRAINS,SELF, sw_KH183_gfx_mid_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH182_mid_JNR;
-}
 
-//cab flip checkers
-switch(FEAT_TRAINS, SELF, sw_KH183_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH183_gfx_rev_livery;
- default: sw_KH183_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH183_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
-  1: sw_KH183_gfx_revflip_livery;
- default: sw_KH183_gfx_rev_livery;
-}
-
-//mucar flipped
-switch(FEAT_TRAINS, SELF, sw_KH183_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
-  1: sw_KH183_gfx_mid_revflip_livery;
- default: sw_KH183_gfx_mid_rev_livery;
-}
-
-//check if the opposite vehicle has been flipped
-switch(FEAT_TRAINS, SELF, sw_KH183_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), 
-getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
-  0: sw_KH183_gfx_rev_flippedcheck;
-  default: sw_KH183_gfx_rev_flippedcheckopp;
-}
-switch(FEAT_TRAINS, SELF, sw_KH183_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH183_gfx_front_livery;
-  default: sw_KH183_gfx_rev_opposite_flippedcheck;
-}
-
-//main stuff
-switch(FEAT_TRAINS, SELF, sw_KH183_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1521: sw_KH183_gfx_rev_opposite_pos;
-
-  1000: sw_KH183_gfx_rev_flippedcheck_mucar;
-}
-/*---END OF SECTION---*/
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
@@ -141,11 +80,6 @@ switch(FEAT_TRAINS, SELF, sw_KH183_0_JNR_gfx_frontback_revcheck_posfront, positi
  0: sw_KH183_0_JNR_gfx_frontback_flipcheck_posfront;
  default: sw_KH183_0_JNR_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH183_0_JNR_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH183_0_JNR_gfx_frontback_revcheck_posfront;
- default: sw_KH183_gfx_rev_idcheck;
-}
-
 //KH183-100 JNR
 switch(FEAT_TRAINS, SELF, sw_KH183_100_JNR_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
  0: spriteset_KH183_100_revflip_JNR;
@@ -163,11 +97,6 @@ switch(FEAT_TRAINS, SELF, sw_KH183_100_JNR_gfx_frontback_revcheck_posfront, posi
  0: sw_KH183_100_JNR_gfx_frontback_flipcheck_posfront;
  default: sw_KH183_100_JNR_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH183_100_JNR_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH183_100_JNR_gfx_frontback_revcheck_posfront;
- default: sw_KH183_gfx_rev_idcheck;
-}
-
 //KH183-100 JNR2
 switch(FEAT_TRAINS, SELF, sw_KH183_100_JNR2_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
  0: spriteset_KH183_100_revflip_JNR2;
@@ -185,16 +114,7 @@ switch(FEAT_TRAINS, SELF, sw_KH183_100_JNR2_gfx_frontback_revcheck_posfront, pos
  0: sw_KH183_100_JNR2_gfx_frontback_flipcheck_posfront;
  default: sw_KH183_100_JNR2_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH183_100_JNR2_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH183_100_JNR2_gfx_frontback_revcheck_posfront;
- default: sw_KH183_gfx_rev_idcheck;
-}
-
 //mucar one
-switch(FEAT_TRAINS, PARENT, sw_KH183_gfx_mid, vehicle_is_reversed){
-  0: spriteset_KH182_mid_JNR;
-  default: sw_KH183_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -205,9 +125,9 @@ switch(FEAT_TRAINS, PARENT, sw_KH183_gfx_mid, vehicle_is_reversed){
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH183_gfx_main, cargo_subtype) {
-  0: sw_KH183_0_JNR_gfx_frontback_revcheck;
-  1: sw_KH183_100_JNR_gfx_frontback_revcheck;
-  2: sw_KH183_100_JNR2_gfx_frontback_revcheck;
+  0: sw_KH183_0_JNR_gfx_frontback_revcheck_posfront;
+  1: sw_KH183_100_JNR_gfx_frontback_revcheck_posfront;
+  2: sw_KH183_100_JNR2_gfx_frontback_revcheck_posfront;
 }
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH183_subtypetext_main, cargo_subtype) {
@@ -301,7 +221,7 @@ item(FEAT_TRAINS, dmu_kiha183) {
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
-        default:                      sw_KH183_gfx_mid;
+        default:                      spriteset_KH182_mid_JNR;
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
         cargo_age_period:             param_decay_express;

@@ -5,82 +5,25 @@ alternative_sprites(spriteset_KH30_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,
 
 //KH30 JNR Vermillion Cream
 spriteset (spriteset_KH30_orangecream,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH30_rev_orangecream,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH30_revflip_orangecream,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH30_orangecream,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-1.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_KH30_rev_orangecream,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-1.png")           {tmpl_std(0, 26)}
-alternative_sprites(spriteset_KH30_revflip_orangecream, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-1.png")           {tmpl_std_rev(0, 26)}
 
 //KH30 JNR Orange Vermillion
 spriteset (spriteset_KH30_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH30_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH30_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH30_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-2.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_KH30_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-2.png")           {tmpl_std(0, 26)}
-alternative_sprites(spriteset_KH30_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-2.png")           {tmpl_std_rev(0, 26)}
 
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-/*
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH30_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  1: spriteset_KH30_rev_orange;
-  0: spriteset_KH30_rev_orangecream;
-}
-switch(FEAT_TRAINS,SELF, sw_KH30_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  1: spriteset_KH30_revflip_orange;
-  0: spriteset_KH30_revflip_orangecream;
-}
-
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH30_gfx_rev_livery;
- default: sw_KH30_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1500: sw_KH30_gfx_rev_flippedcheck;
-}
-*/
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH30 JR Orange Vermillion
-switch(FEAT_TRAINS, PARENT, sw_KH30_orangecream_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH30_orangecream;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH30_orange_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH30_orange;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH30_gfx_main, cargo_subtype) {
-  1: sw_KH30_orange_gfx_frontback_revcheck;
-  0: sw_KH30_orangecream_gfx_frontback_revcheck;
+  1: spriteset_KH30_orange;
+  0: spriteset_KH30_orangecream;
 }
 
 //Menu Switches
@@ -91,14 +34,10 @@ switch(FEAT_TRAINS, SELF, sw_KH30_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH30_attach_vehid, [vehicle_type_id == dmu_kiha30]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_kiha30) {
     property {

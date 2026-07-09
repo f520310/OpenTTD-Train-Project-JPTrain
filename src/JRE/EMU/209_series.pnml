@@ -11,40 +11,12 @@ spriteset (spriteset_209_mid_hd_kt_0,    		        "gfx/OTHER/mucar.png") 	{ tmp
 spriteset (spriteset_209_mid_panto_kt_0,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_kt_0,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_kt_0,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_kt_0,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_kt_0,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_hd_kt_0,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_kt_0,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_kt_0,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_kt_0,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_kt_0,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_kt_0,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_hd_kt_0,         "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_kt_0,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_kt_0,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_kt_0,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_kt_0,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_kt_0,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_mid_hd_kt_0,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_kt_0,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 100)}
 alternative_sprites(spriteset_209_back_panto_kt_0,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 150)}
-
-alternative_sprites(spriteset_209_rev_front_kt_0,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_kt_0,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_kt_0,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_mid_hd_kt_0,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_kt_0,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 100)}
-alternative_sprites(spriteset_209_rev_back_panto_kt_0,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 125)}
-
-alternative_sprites(spriteset_209_revflip_front_kt_0,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_kt_0,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_kt_0,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_mid_hd_kt_0,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_kt_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std(0, 100)}
-alternative_sprites(spriteset_209_revflip_back_panto_kt_0,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_keto_32bpp.png")     {tmpl_std_rev(0, 125)}
 
 //209-0 Nannbu
 spriteset (spriteset_209_front_nannbu,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -53,35 +25,11 @@ spriteset (spriteset_209_mid_nannbu,    		        "gfx/OTHER/mucar.png") 	{ tmpl
 spriteset (spriteset_209_mid_panto_nannbu,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_nannbu,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_nannbu,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_nannbu,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_nannbu,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_nannbu,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_nannbu,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_nannbu,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_nannbu,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_nannbu,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_nannbu,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_nannbu,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_nannbu,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_nannbu,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_nannbu,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_nannbu,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_nannbu,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_nannbu,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_nannbu,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_nannbu,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_nannbu,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_nannbu,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_nannbu,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_nannbu,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_nannbu,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_nannbu,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_nannbu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_nannbu_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-0 Boso
 spriteset (spriteset_209_front_boso,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -90,35 +38,11 @@ spriteset (spriteset_209_mid_boso,    		        "gfx/OTHER/mucar.png") 	{ tmpl_s
 spriteset (spriteset_209_mid_panto_boso,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_boso,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_boso,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_boso,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_boso,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_boso,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_boso,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_boso,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_boso,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_boso,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_boso,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_boso,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_boso,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_boso,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_boso,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_boso,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_boso,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_boso,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_boso,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_boso,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_boso,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_boso,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_boso,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_boso,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_boso,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_boso,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_boso,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_boso_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-0 Hachiko
 spriteset (spriteset_209_front_hachiko_0,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -127,35 +51,11 @@ spriteset (spriteset_209_mid_hachiko_0,    		        "gfx/OTHER/mucar.png") 	{ t
 spriteset (spriteset_209_mid_panto_hachiko_0,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_hachiko_0,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_hachiko_0,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_hachiko_0,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_hachiko_0,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_hachiko_0,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_hachiko_0,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_hachiko_0,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_hachiko_0,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_hachiko_0,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_hachiko_0,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_hachiko_0,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_hachiko_0,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_hachiko_0,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_hachiko_0,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_hachiko_0,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_hachiko_0,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_hachiko_0,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_hachiko_0,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_hachiko_0,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_hachiko_0,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_hachiko_0,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_hachiko_0,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_hachiko_0,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_hachiko_0,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_hachiko_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_hachiko_0,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-0_hachiko_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-500 Sobu
 spriteset (spriteset_209_front_sobu,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -164,35 +64,11 @@ spriteset (spriteset_209_mid_sobu,    		        "gfx/OTHER/mucar.png") 	{ tmpl_s
 spriteset (spriteset_209_mid_panto_sobu,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_sobu,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_sobu,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_sobu,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_sobu,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_sobu,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_sobu,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_sobu,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_sobu,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_sobu,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_sobu,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_sobu,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_sobu,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_sobu,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_sobu,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_sobu,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_sobu,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_sobu,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_sobu,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_sobu,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_sobu,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_sobu,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_sobu,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_sobu,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_sobu,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_sobu,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_sobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_sobu_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-500 Keihin Tohoku
 spriteset (spriteset_209_front_kt_500,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -201,35 +77,11 @@ spriteset (spriteset_209_mid_kt_500,    		        "gfx/OTHER/mucar.png") 	{ tmpl
 spriteset (spriteset_209_mid_panto_kt_500,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_kt_500,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_kt_500,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_kt_500,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_kt_500,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_kt_500,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_kt_500,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_kt_500,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_kt_500,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_kt_500,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_kt_500,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_kt_500,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_kt_500,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_kt_500,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_kt_500,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_kt_500,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_kt_500,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_kt_500,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_kt_500,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_kt_500,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_kt_500,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_kt_500,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_kt_500,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_kt_500,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_kt_500,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_kt_500,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_kt_500,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keto_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-500 Keiyo
 spriteset (spriteset_209_front_keiyo,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -238,35 +90,11 @@ spriteset (spriteset_209_mid_keiyo,    		        "gfx/OTHER/mucar.png") 	{ tmpl_
 spriteset (spriteset_209_mid_panto_keiyo,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_keiyo,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_keiyo,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_keiyo,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_keiyo,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_keiyo,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_keiyo,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_keiyo,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_keiyo,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_keiyo,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_keiyo,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_keiyo,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_keiyo,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_keiyo,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_keiyo,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_keiyo,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_keiyo,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_keiyo,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_keiyo,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_keiyo,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_keiyo,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_keiyo,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_keiyo,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_keiyo,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_keiyo,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_keiyo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_keiyo_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-500 Musashino
 spriteset (spriteset_209_front_musa,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -275,35 +103,11 @@ spriteset (spriteset_209_mid_musa,    		        "gfx/OTHER/mucar.png") 	{ tmpl_s
 spriteset (spriteset_209_mid_panto_musa,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_musa,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_musa,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_musa,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_musa,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_musa,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_musa,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_musa,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_musa,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_musa,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_musa,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_musa,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_musa,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_musa,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_musa,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_musa,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_musa,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_musa,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_musa,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_musa,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_musa,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_musa,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_musa,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_musa,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_musa,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_musa,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_musa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-500_musashino_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-1000 Joban
 spriteset (spriteset_209_front_joban,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -312,35 +116,11 @@ spriteset (spriteset_209_mid_joban,    		        "gfx/OTHER/mucar.png") 	{ tmpl_
 spriteset (spriteset_209_mid_panto_joban,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_joban,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_joban,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_joban,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_joban,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_joban,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_joban,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_joban,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_joban,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_joban,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_joban,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_joban,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_joban,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_joban,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_joban,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_joban,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_joban,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_joban,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_joban,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_joban,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_joban,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_joban,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_joban,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_joban,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_joban,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_joban,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_joban,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_joban_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-1000 Chuo
 spriteset (spriteset_209_front_chuo,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -349,35 +129,11 @@ spriteset (spriteset_209_mid_chuo,    		        "gfx/OTHER/mucar.png") 	{ tmpl_s
 spriteset (spriteset_209_mid_panto_chuo,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_chuo,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_chuo,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_chuo,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_chuo,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_chuo,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_chuo,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_chuo,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_chuo,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_chuo,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_chuo,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_chuo,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_chuo,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_chuo,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_chuo,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_chuo,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_chuo,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 125)}
-
-alternative_sprites(spriteset_209_rev_front_chuo,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_chuo,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_chuo,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_chuo,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_chuo,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_chuo,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_chuo,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_chuo,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_chuo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_chuo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-1000_chuo_32bpp.png")     {tmpl_std_rev(0, 100)}
 
 //209-3500 Hachiko
 spriteset (spriteset_209_front_hachiko_3500,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -386,40 +142,13 @@ spriteset (spriteset_209_mid_hachiko_3500,    		        "gfx/OTHER/mucar.png") 	
 spriteset (spriteset_209_mid_panto_hachiko_3500,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_209_back_panto_hachiko_3500,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_209_rev_front_hachiko_3500,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_hachiko_3500,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_hachiko_3500,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_mid_panto_hachiko_3500,        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_rev_back_panto_hachiko_3500,    	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_209_revflip_front_hachiko_3500,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_hachiko_3500,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_hachiko_3500,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_mid_panto_hachiko_3500,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_209_revflip_back_panto_hachiko_3500,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
 alternative_sprites(spriteset_209_front_hachiko_3500,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_209_back_hachiko_3500,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_209_mid_hachiko_3500,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 50)}
 alternative_sprites(spriteset_209_mid_panto_hachiko_3500,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_209_back_panto_hachiko_3500,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 125)}
 
-alternative_sprites(spriteset_209_rev_front_hachiko_3500,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_209_rev_back_hachiko_3500,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 0)}
-alternative_sprites(spriteset_209_rev_mid_hachiko_3500,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_209_rev_mid_panto_hachiko_3500,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 75)}
-alternative_sprites(spriteset_209_rev_back_panto_hachiko_3500,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 100)}
-
-alternative_sprites(spriteset_209_revflip_front_hachiko_3500,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 25)}
-alternative_sprites(spriteset_209_revflip_back_hachiko_3500,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_209_revflip_mid_hachiko_3500,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_209_revflip_mid_panto_hachiko_3500,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std(0, 75)}
-alternative_sprites(spriteset_209_revflip_back_panto_hachiko_3500,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emu209/209-3500_hachiko_32bpp.png")     {tmpl_std_rev(0, 100)}
-
-
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Pantograph Positions---*/
 //209-0 Keihin Tohoku
@@ -698,283 +427,6 @@ switch(FEAT_TRAINS,SELF, sw_209_gfx_pantograph_pos_hk3500, num_vehs_in_vehid_cha
 }
 /*---END OF SECTION---*/
 
-
-
-/*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_rev_front_hachiko_3500;
-  9: spriteset_209_rev_front_chuo;
-  8: spriteset_209_rev_front_joban;
-  7: spriteset_209_rev_front_musa;
-  6: spriteset_209_rev_front_keiyo;
-  5: spriteset_209_rev_front_kt_500;
-  4: spriteset_209_rev_front_sobu;
-  3: spriteset_209_rev_front_hachiko_0;
-  2: spriteset_209_rev_front_boso;
-  1: spriteset_209_rev_front_nannbu;
-  0: spriteset_209_rev_front_kt_0;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_revflip_front_hachiko_3500;
-  9: spriteset_209_revflip_front_chuo;
-  8: spriteset_209_revflip_front_joban;
-  7: spriteset_209_revflip_front_musa;
-  6: spriteset_209_revflip_front_keiyo;
-  5: spriteset_209_revflip_front_kt_500;
-  4: spriteset_209_revflip_front_sobu;
-  3: spriteset_209_revflip_front_hachiko_0;
-  2: spriteset_209_revflip_front_boso;
-  1: spriteset_209_revflip_front_nannbu;
-  0: spriteset_209_revflip_front_kt_0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_rev_mid_panto_hachiko_3500;
-  9: spriteset_209_rev_mid_panto_chuo;
-  8: spriteset_209_rev_mid_panto_joban;
-  7: spriteset_209_rev_mid_panto_musa;
-  6: spriteset_209_rev_mid_panto_keiyo;
-  5: spriteset_209_rev_mid_panto_kt_500;
-  4: spriteset_209_rev_mid_panto_sobu;
-  3: spriteset_209_rev_mid_panto_hachiko_0;
-  2: spriteset_209_rev_mid_panto_boso;
-  1: spriteset_209_rev_mid_panto_nannbu;
-  0: spriteset_209_rev_mid_panto_kt_0;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_revflip_mid_panto_hachiko_3500;
-  9: spriteset_209_revflip_mid_panto_chuo;
-  8: spriteset_209_revflip_mid_panto_joban;
-  7: spriteset_209_revflip_mid_panto_musa;
-  6: spriteset_209_revflip_mid_panto_keiyo;
-  5: spriteset_209_revflip_mid_panto_kt_500;
-  4: spriteset_209_revflip_mid_panto_sobu;
-  3: spriteset_209_revflip_mid_panto_hachiko_0;
-  2: spriteset_209_revflip_mid_panto_boso;
-  1: spriteset_209_revflip_mid_panto_nannbu;
-  0: spriteset_209_revflip_mid_panto_kt_0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_rev_mid_hachiko_3500;
-  9: spriteset_209_rev_mid_chuo;
-  8: spriteset_209_rev_mid_joban;
-  7: spriteset_209_rev_mid_musa;
-  6: spriteset_209_rev_mid_keiyo;
-  5: spriteset_209_rev_mid_kt_500;
-  4: spriteset_209_rev_mid_sobu;
-  3: spriteset_209_rev_mid_hachiko_0;
-  2: spriteset_209_rev_mid_boso;
-  1: spriteset_209_rev_mid_nannbu;
-  0: spriteset_209_rev_mid_kt_0;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_revflip_mid_hachiko_3500;
-  9: spriteset_209_revflip_mid_chuo;
-  8: spriteset_209_revflip_mid_joban;
-  7: spriteset_209_revflip_mid_musa;
-  6: spriteset_209_revflip_mid_keiyo;
-  5: spriteset_209_revflip_mid_kt_500;
-  4: spriteset_209_revflip_mid_sobu;
-  3: spriteset_209_revflip_mid_hachiko_0;
-  2: spriteset_209_revflip_mid_boso;
-  1: spriteset_209_revflip_mid_nannbu;
-  0: spriteset_209_revflip_mid_kt_0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_mid_hd_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_rev_mid_hachiko_3500;
-  9: spriteset_209_rev_mid_chuo;
-  8: spriteset_209_rev_mid_joban;
-  7: spriteset_209_rev_mid_musa;
-  6: spriteset_209_rev_mid_keiyo;
-  5: spriteset_209_rev_mid_kt_500;
-  4: spriteset_209_rev_mid_sobu;
-  3: spriteset_209_rev_mid_hachiko_0;
-  2: spriteset_209_rev_mid_boso;
-  1: spriteset_209_rev_mid_nannbu;
-  0: spriteset_209_rev_mid_hd_kt_0;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_revflip_mid_hd_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_revflip_mid_hachiko_3500;
-  9: spriteset_209_revflip_mid_chuo;
-  8: spriteset_209_revflip_mid_joban;
-  7: spriteset_209_revflip_mid_musa;
-  6: spriteset_209_revflip_mid_keiyo;
-  5: spriteset_209_revflip_mid_kt_500;
-  4: spriteset_209_revflip_mid_sobu;
-  3: spriteset_209_revflip_mid_hachiko_0;
-  2: spriteset_209_revflip_mid_boso;
-  1: spriteset_209_revflip_mid_nannbu;
-  0: spriteset_209_revflip_mid_hd_kt_0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_rev_back_hachiko_3500;
-  9: spriteset_209_rev_back_chuo;
-  8: spriteset_209_rev_back_joban;
-  7: spriteset_209_rev_back_musa;
-  6: spriteset_209_rev_back_keiyo;
-  5: spriteset_209_rev_back_kt_500;
-  4: spriteset_209_rev_back_sobu;
-  3: spriteset_209_rev_back_hachiko_0;
-  2: spriteset_209_rev_back_boso;
-  1: spriteset_209_rev_back_nannbu;
-  0: spriteset_209_rev_back_kt_0;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_revflip_back_hachiko_3500;
-  9: spriteset_209_revflip_back_chuo;
-  8: spriteset_209_revflip_back_joban;
-  7: spriteset_209_revflip_back_musa;
-  6: spriteset_209_revflip_back_keiyo;
-  5: spriteset_209_revflip_back_kt_500;
-  4: spriteset_209_revflip_back_sobu;
-  3: spriteset_209_revflip_back_hachiko_0;
-  2: spriteset_209_revflip_back_boso;
-  1: spriteset_209_revflip_back_nannbu;
-  0: spriteset_209_revflip_back_kt_0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_rev_back_panto_hachiko_3500;
-  9: spriteset_209_rev_back_panto_chuo;
-  8: spriteset_209_rev_back_panto_joban;
-  7: spriteset_209_rev_back_panto_musa;
-  6: spriteset_209_rev_back_panto_keiyo;
-  5: spriteset_209_rev_back_panto_kt_500;
-  4: spriteset_209_rev_back_panto_sobu;
-  3: spriteset_209_rev_back_panto_hachiko_0;
-  2: spriteset_209_rev_back_panto_boso;
-  1: spriteset_209_rev_back_panto_nannbu;
-  0: spriteset_209_rev_back_panto_kt_0;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: spriteset_209_revflip_back_panto_hachiko_3500;
-  9: spriteset_209_revflip_back_panto_chuo;
-  8: spriteset_209_revflip_back_panto_joban;
-  7: spriteset_209_revflip_back_panto_musa;
-  6: spriteset_209_revflip_back_panto_keiyo;
-  5: spriteset_209_revflip_back_panto_kt_500;
-  4: spriteset_209_revflip_back_panto_sobu;
-  3: spriteset_209_revflip_back_panto_hachiko_0;
-  2: spriteset_209_revflip_back_panto_boso;
-  1: spriteset_209_revflip_back_panto_nannbu;
-  0: spriteset_209_revflip_back_panto_kt_0;
-}
-
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
-  1: sw_209_gfx_rev_front_livery;
- default: sw_209_gfx_revflip_front_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_mid_panto_flippedcheck, vehicle_is_flipped) {
-  1: sw_209_gfx_revflip_mid_panto_livery;
- default: sw_209_gfx_rev_mid_panto_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
-  1: sw_209_gfx_revflip_mid_livery;
- default: sw_209_gfx_rev_mid_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_mid_hd_flippedcheck, vehicle_is_flipped) {
-  1: sw_209_gfx_revflip_mid_hd_livery;
- default: sw_209_gfx_rev_mid_hd_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
-  1: sw_209_gfx_revflip_back_livery;
- default: sw_209_gfx_rev_back_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_back_panto_flippedcheck, vehicle_is_flipped) {
-  1: sw_209_gfx_revflip_back_panto_livery;
- default: sw_209_gfx_rev_back_panto_livery;
-}
-
-//Pantograph Position Testing
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_pantograph_pos_panend_standard, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain_from_end
-  1: sw_209_gfx_rev_mid_panto_flippedcheck;
-  default:sw_209_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_pantograph_pos_medium_standard, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain
-  0: sw_209_gfx_rev_mid_panto_flippedcheck;
-  default:sw_209_gfx_rev_pantograph_pos_panend_standard;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_pantograph_pos_long_standard, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%10]){ //look at opposite position_in_vehID_chain
-  1: sw_209_gfx_rev_mid_panto_flippedcheck;
-  4: sw_209_gfx_rev_mid_hd_flippedcheck;
-  default:sw_209_gfx_rev_pantograph_pos_panend_standard;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_pantograph_pos_short_standard, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain_from_end
-  0: sw_209_gfx_rev_mid_panto_flippedcheck;
-  default:sw_209_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_pantograph_pos_standard, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ //look at opposite num_vehs_in_vehid_chain
-  0..2: sw_209_gfx_rev_pantograph_pos_short_standard;
-  3: sw_209_gfx_rev_pantograph_pos_panend_standard;
-  4..6: sw_209_gfx_rev_pantograph_pos_medium_standard;
-  default: sw_209_gfx_rev_pantograph_pos_long_standard;
-}
-
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  10: sw_209_gfx_rev_pantograph_pos_standard;
-  9: sw_209_gfx_rev_pantograph_pos_standard;
-  8: sw_209_gfx_rev_pantograph_pos_standard;
-  7: sw_209_gfx_rev_pantograph_pos_standard;
-  6: sw_209_gfx_rev_pantograph_pos_standard;
-  5: sw_209_gfx_rev_pantograph_pos_standard;
-  4: sw_209_gfx_rev_pantograph_pos_standard;
-  3: sw_209_gfx_rev_pantograph_pos_standard;
-  2: sw_209_gfx_rev_pantograph_pos_standard;
-  1: sw_209_gfx_rev_pantograph_pos_standard;
-  0: sw_209_gfx_rev_pantograph_pos_standard;
-}
-
-//Back Car Pantograph Testing
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain
- 0: sw_209_gfx_rev_back_flippedcheck;
- default: sw_209_gfx_rev_back_panto_flippedcheck;
-}
-
-//Front/Back Car Position Testing
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_frontback_nomucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_209_gfx_rev_front_flippedcheck;
-  0:sw_209_gfx_rev_back_pantocheck;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_frontback_aftermucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_209_gfx_rev_back_pantocheck;
-  0:sw_209_gfx_rev_front_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_frontback_mucarcheck, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
-STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
-var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000:sw_209_gfx_rev_frontback_aftermucars;
-  default:sw_209_gfx_rev_frontback_nomucars;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2021:sw_209_gfx_rev_frontback_mucarcheck;
-  1000:sw_209_gfx_rev_front_flippedcheck;
-  default:sw_209_gfx_rev_back_pantocheck;
-}
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2021:sw_209_gfx_rev_frontback_sameid;
-  1000:sw_209_gfx_rev_back_pantocheck;
-  default:sw_209_gfx_rev_front_flippedcheck;
-}
-
-//ID Testing
-switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
-  1000: sw_209_gfx_rev_pantograph_pos;
-  2021: sw_209_gfx_rev_frontback;
-}
-/*---END OF SECTION---*/
-
-
-
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //209-0 Keihin Tohoku
 switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_kt0, position_in_vehid_chain){
@@ -984,10 +436,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_kt0, position_in_vehid_chain){
 switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_kt0, vehicle_is_flipped){
  0: spriteset_209_front_kt_0;
  default: sw_209_gfx_pantocheck_kt0;
-}
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_kt0, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_kt0;
- default: sw_209_gfx_rev_idcheck;
 }
 
 //209-0 Nannbu
@@ -999,10 +447,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_nannbu, vehicle_is_flip
  0: spriteset_209_front_nannbu;
  default: sw_209_gfx_pantocheck_nannbu;
 }
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_nannbu, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_nannbu;
- default: sw_209_gfx_rev_idcheck;
-}
 
 //209-0 Boso
 switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_boso, position_in_vehid_chain){
@@ -1012,10 +456,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_boso, position_in_vehid_chain){
 switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_boso, vehicle_is_flipped){
  0: spriteset_209_front_boso;
  default: sw_209_gfx_pantocheck_boso;
-}
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_boso, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_boso;
- default: sw_209_gfx_rev_idcheck;
 }
 
 //209-0 Hachiko
@@ -1027,10 +467,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_hk0, vehicle_is_flipped
  0: spriteset_209_front_hachiko_0;
  default: sw_209_gfx_pantocheck_hk0;
 }
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_hk0, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_hk0;
- default: sw_209_gfx_rev_idcheck;
-}
 
 //209-500 Sobu
 switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_sobu, position_in_vehid_chain){
@@ -1040,10 +476,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_sobu, position_in_vehid_chain){
 switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_sobu, vehicle_is_flipped){
  0: spriteset_209_front_sobu;
  default: sw_209_gfx_pantocheck_sobu;
-}
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_sobu, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_sobu;
- default: sw_209_gfx_rev_idcheck;
 }
 
 //209-500 Keihin Tohoku
@@ -1055,10 +487,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_kt500, vehicle_is_flipp
  0: spriteset_209_front_kt_500;
  default: sw_209_gfx_pantocheck_kt500;
 }
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_kt500, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_kt500;
- default: sw_209_gfx_rev_idcheck;
-}
 
 //209-500 Keiyo
 switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_keiyo, position_in_vehid_chain){
@@ -1068,10 +496,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_keiyo, position_in_vehid_chain){
 switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_keiyo, vehicle_is_flipped){
  0: spriteset_209_front_keiyo;
  default: sw_209_gfx_pantocheck_keiyo;
-}
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_keiyo, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_keiyo;
- default: sw_209_gfx_rev_idcheck;
 }
 
 //209-500 Musashino
@@ -1083,10 +507,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_musa, vehicle_is_flippe
  0: spriteset_209_front_musa;
  default: sw_209_gfx_pantocheck_musa;
 }
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_musa, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_musa;
- default: sw_209_gfx_rev_idcheck;
-}
 
 //209-1000 Joban
 switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_joban, position_in_vehid_chain){
@@ -1096,10 +516,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_joban, position_in_vehid_chain){
 switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_joban, vehicle_is_flipped){
  0: spriteset_209_front_joban;
  default: sw_209_gfx_pantocheck_joban;
-}
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_joban, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_joban;
- default: sw_209_gfx_rev_idcheck;
 }
 
 //209-1000 Chuo
@@ -1111,10 +527,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_chuo, vehicle_is_flippe
  0: spriteset_209_front_chuo;
  default: sw_209_gfx_pantocheck_chuo;
 }
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_chuo, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_chuo;
- default: sw_209_gfx_rev_idcheck;
-}
 
 //209-3500 Hachiko
 switch(FEAT_TRAINS, SELF, sw_209_gfx_pantocheck_hk3500, position_in_vehid_chain){
@@ -1125,111 +537,59 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_flipcheck_hk3500, vehicle_is_flip
  0: spriteset_209_front_hachiko_3500;
  default: sw_209_gfx_pantocheck_hk3500;
 }
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_frontback_revcheck_hk3500, vehicle_is_reversed){
- 0: sw_209_gfx_frontback_flipcheck_hk3500;
- default: sw_209_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Middle Car Switches---*/
 //209-0 Keihin Tohoku
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_kt0, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_kt0;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-0 Nannbu
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_nannbu, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_nannbu;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-0 Boso
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_boso, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_boso;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-0 Hachiko
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_hk0, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_hk0;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-500 Sobu
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_sobu, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_sobu;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-500 Keihin Tohoku
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_kt500, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_kt500;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-500 Keiyo
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_keiyo, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_keiyo;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-500 Musashino
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_musa, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_musa;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-1000 Joban
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_joban, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_joban;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-1000 Chuo
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_chuo, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_chuo;
-    default: sw_209_gfx_rev_idcheck;
-}
 
 //209-3500 Hachiko
-switch(FEAT_TRAINS, PARENT, sw_209_gfx_mucar_revcheck_mid_hk3500, vehicle_is_reversed){
-    0: sw_209_gfx_pantograph_pos_hk3500;
-    default: sw_209_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_209_gfx_mucar, cargo_subtype){
-  10: sw_209_gfx_mucar_revcheck_mid_hk3500;
-  9: sw_209_gfx_mucar_revcheck_mid_chuo;
-  8: sw_209_gfx_mucar_revcheck_mid_joban;
-  7: sw_209_gfx_mucar_revcheck_mid_musa;
-  6: sw_209_gfx_mucar_revcheck_mid_keiyo;
-  5: sw_209_gfx_mucar_revcheck_mid_kt500;
-  4: sw_209_gfx_mucar_revcheck_mid_sobu;
-  3: sw_209_gfx_mucar_revcheck_mid_hk0;
-  2: sw_209_gfx_mucar_revcheck_mid_boso;
-  1: sw_209_gfx_mucar_revcheck_mid_nannbu;
-  0: sw_209_gfx_mucar_revcheck_mid_kt0;
+  10: sw_209_gfx_pantograph_pos_hk3500;
+  9: sw_209_gfx_pantograph_pos_chuo;
+  8: sw_209_gfx_pantograph_pos_joban;
+  7: sw_209_gfx_pantograph_pos_musa;
+  6: sw_209_gfx_pantograph_pos_keiyo;
+  5: sw_209_gfx_pantograph_pos_kt500;
+  4: sw_209_gfx_pantograph_pos_sobu;
+  3: sw_209_gfx_pantograph_pos_hk0;
+  2: sw_209_gfx_pantograph_pos_boso;
+  1: sw_209_gfx_pantograph_pos_nannbu;
+  0: sw_209_gfx_pantograph_pos_kt0;
 }
 switch(FEAT_TRAINS, SELF, sw_209_gfx_main, cargo_subtype) {
-  10: sw_209_gfx_frontback_revcheck_hk3500;
-  9: sw_209_gfx_frontback_revcheck_chuo;
-  8: sw_209_gfx_frontback_revcheck_joban;
-  7: sw_209_gfx_frontback_revcheck_musa;
-  6: sw_209_gfx_frontback_revcheck_keiyo;
-  5: sw_209_gfx_frontback_revcheck_kt500;
-  4: sw_209_gfx_frontback_revcheck_sobu;
-  3: sw_209_gfx_frontback_revcheck_hk0;
-  2: sw_209_gfx_frontback_revcheck_boso;
-  1: sw_209_gfx_frontback_revcheck_nannbu;
-  0: sw_209_gfx_frontback_revcheck_kt0;
+  10: sw_209_gfx_frontback_flipcheck_hk3500;
+  9: sw_209_gfx_frontback_flipcheck_chuo;
+  8: sw_209_gfx_frontback_flipcheck_joban;
+  7: sw_209_gfx_frontback_flipcheck_musa;
+  6: sw_209_gfx_frontback_flipcheck_keiyo;
+  5: sw_209_gfx_frontback_flipcheck_kt500;
+  4: sw_209_gfx_frontback_flipcheck_sobu;
+  3: sw_209_gfx_frontback_flipcheck_hk0;
+  2: sw_209_gfx_frontback_flipcheck_boso;
+  1: sw_209_gfx_frontback_flipcheck_nannbu;
+  0: sw_209_gfx_frontback_flipcheck_kt0;
 }
 
 //Menu Switches
@@ -1261,14 +621,10 @@ switch(FEAT_TRAINS, SELF, sw_209_subtypetext_main, cargo_subtype) {
 }
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_209_attach_vehid, [vehicle_type_id == emu_209 || vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, emu_209) {
     property {

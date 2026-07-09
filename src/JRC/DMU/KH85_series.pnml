@@ -34,64 +34,7 @@ alternative_sprites(spriteset_KH85_mid_rev_JRC,           ZOOM_LEVEL_NORMAL, BIT
 
 /*---END OF SECTION---*/
 
-/*---GFX: Train Reversing Switches---*/
-switch(FEAT_TRAINS,SELF, sw_KH85_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH85_rev_JRC;
-  1: spriteset_KH85_widev_rev_JRC;
-}
-switch(FEAT_TRAINS,SELF, sw_KH85_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH85_revflip_JRC;
-  1: spriteset_KH85_widev_revflip_JRC;
-}
-switch(FEAT_TRAINS,SELF, sw_KH85_gfx_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH85_JRC;
-  1: spriteset_KH85_widev_JRC;
-}
-switch(FEAT_TRAINS,SELF, sw_KH85_gfx_frontflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH85_frontflip_JRC;
-  1: spriteset_KH85_widev_frontflip_JRC;
-}
-switch(FEAT_TRAINS,SELF, sw_KH85_gfx_mid_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH85_mid_rev_JRC;
-}
-switch(FEAT_TRAINS,SELF, sw_KH85_gfx_mid_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH85_mid_JRC;
-}
 
-//cab flip checkers
-switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH85_gfx_rev_livery;
- default: sw_KH85_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
-  1: sw_KH85_gfx_revflip_livery;
- default: sw_KH85_gfx_rev_livery;
-}
-
-//mucar flipped
-switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
-  1: sw_KH85_gfx_mid_revflip_livery;
- default: sw_KH85_gfx_mid_rev_livery;
-}
-
-//check if the opposite vehicle has been flipped
-switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), 
-getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
-  0: sw_KH85_gfx_rev_flippedcheck;
-  default: sw_KH85_gfx_rev_flippedcheckopp;
-}
-switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH85_gfx_front_livery;
-  default: sw_KH85_gfx_rev_opposite_flippedcheck;
-}
-
-//main stuff
-switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1520: sw_KH85_gfx_rev_opposite_pos;
-
-  1000: sw_KH85_gfx_rev_flippedcheck_mucar;
-}
-/*---END OF SECTION---*/
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH85 Cab JRC
@@ -111,10 +54,6 @@ switch(FEAT_TRAINS, SELF, sw_KH85_JRC_gfx_frontback_revcheck_posfront, position_
  0: sw_KH85_JRC_gfx_frontback_flipcheck_posfront;
  default: sw_KH85_JRC_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH85_JRC_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH85_JRC_gfx_frontback_revcheck_posfront;
- default: sw_KH85_gfx_rev_idcheck;
-}
 //KH85 Wideview Cab JRC
 switch(FEAT_TRAINS, SELF, sw_KH85_widev_JRC_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
  0: spriteset_KH85_widev_revflip_JRC;
@@ -132,15 +71,7 @@ switch(FEAT_TRAINS, SELF, sw_KH85_widev_JRC_gfx_frontback_revcheck_posfront, pos
  0: sw_KH85_widev_JRC_gfx_frontback_flipcheck_posfront;
  default: sw_KH85_widev_JRC_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, PARENT, sw_KH85_widev_JRC_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_KH85_widev_JRC_gfx_frontback_revcheck_posfront;
- default: sw_KH85_gfx_rev_idcheck;
-}
 //mucar one
-switch(FEAT_TRAINS, PARENT, sw_KH85_gfx_mid, vehicle_is_reversed){
-  0: spriteset_KH85_mid_JRC;
-  default: sw_KH85_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -151,8 +82,8 @@ switch(FEAT_TRAINS, PARENT, sw_KH85_gfx_mid, vehicle_is_reversed){
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH85_gfx_main, cargo_subtype) {
-  0: sw_KH85_JRC_gfx_frontback_revcheck;
-  1: sw_KH85_widev_JRC_gfx_frontback_revcheck;
+  0: sw_KH85_JRC_gfx_frontback_revcheck_posfront;
+  1: sw_KH85_widev_JRC_gfx_frontback_revcheck_posfront;
 }
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH85_subtypetext_main, cargo_subtype) {
@@ -245,7 +176,7 @@ item(FEAT_TRAINS, dmu_kiha85) {
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
-        default:                      sw_KH85_gfx_mid;
+        default:                      spriteset_KH85_mid_JRC;
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
         cargo_age_period:             param_decay_express;

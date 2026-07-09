@@ -5,96 +5,31 @@ alternative_sprites(spriteset_KH130_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP
 
 //KH130 JRH Green
 spriteset (spriteset_KH130_jrhgreen,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH130_rev_jrhgreen,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH130_revflip_jrhgreen,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH130_jrhgreen,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-1.png")           {tmpl_7l(0, 0)}
-alternative_sprites(spriteset_KH130_rev_jrhgreen,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-1.png")           {tmpl_7l(0, 25)}
-alternative_sprites(spriteset_KH130_revflip_jrhgreen, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-1.png")           {tmpl_7l_rev(0, 25)}
 
 //KH130 JRH
 spriteset (spriteset_KH130_jrh,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH130_rev_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH130_revflip_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH130_jrh,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-2.png")           {tmpl_7l(0, 0)}
-alternative_sprites(spriteset_KH130_rev_jrh,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-2.png")           {tmpl_7l(0, 25)}
-alternative_sprites(spriteset_KH130_revflip_jrh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-2.png")           {tmpl_7l_rev(0, 25)}
 
 //KH130 CR70/CR75 Chihoku Kogen Railway
 spriteset (spriteset_KH130_cr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH130_rev_cr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH130_revflip_cr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_KH130_cr,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-3.png")           {tmpl_7l(0, 0)}
-alternative_sprites(spriteset_KH130_rev_cr,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-3.png")           {tmpl_7l(0, 25)}
-alternative_sprites(spriteset_KH130_revflip_cr, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH130/KIHA130-3.png")           {tmpl_7l_rev(0, 25)}
 
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Pantograph Positions---*/
-
-/*---END OF SECTION---*/
-
-
-
-/*---GFX: Train Reversing Switches---*/
-/*
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH130_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  1: spriteset_KH130_rev_orange;
-  0: spriteset_KH130_rev_orangecream;
-}
-switch(FEAT_TRAINS,SELF, sw_KH130_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  1: spriteset_KH130_revflip_orange;
-  0: spriteset_KH130_revflip_orangecream;
-}
-
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH130_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH130_gfx_rev_livery;
- default: sw_KH130_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH130_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1500: sw_KH130_gfx_rev_flippedcheck;
-}
-*/
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //KH130 JR Orange Vermillion
-switch(FEAT_TRAINS, PARENT, sw_KH130_jrhgreen_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH130_jrhgreen;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH130_jrh_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH130_jrh;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_KH130_cr_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH130_cr;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
-
-
-
-/*---GFX: Middle Car Switches---*/
-
-/*---END OF SECTION---*/
-
-
 
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH130_gfx_main, cargo_subtype) {
-  2: sw_KH130_cr_gfx_frontback_revcheck;
-  1: sw_KH130_jrh_gfx_frontback_revcheck;
-  0: sw_KH130_jrhgreen_gfx_frontback_revcheck;
+  2: spriteset_KH130_cr;
+  1: spriteset_KH130_jrh;
+  0: spriteset_KH130_jrhgreen;
 }
 
 //Menu Switches
@@ -106,14 +41,10 @@ switch(FEAT_TRAINS, SELF, sw_KH130_subtypetext_main, cargo_subtype) {
 
 /*---END OF SECTION---*/
 
-
-
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH130_attach_vehid, [vehicle_type_id == dmu_kiha130]) {
   0: return string(MU_UNIQUE);
   }
-
-
 
 item(FEAT_TRAINS, dmu_kiha130) {
     property {

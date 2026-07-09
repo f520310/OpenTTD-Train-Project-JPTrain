@@ -1,5 +1,4 @@
-/*---GFX: Train Reversing Switches---*/
-/*---END OF SECTION---*/
+
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_403_mid_panto_initial;
@@ -35,10 +34,6 @@ switch(FEAT_TRAINS, SELF, sw_403_gfx_frontback_flipcheck_initial, vehicle_is_fli
  0: spriteset_403_front_initial;
  default: sw_403_gfx_pantocheck_initial;
 }
-switch(FEAT_TRAINS, PARENT, sw_403_gfx_frontback_initial, vehicle_is_reversed){
- 0: sw_403_gfx_frontback_flipcheck_initial;
- default: sw_415group_gfx_rev_idcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantocheck_joban, position_in_vehid_chain){
  0: spriteset_403_back_joban;
 default: spriteset_403_back_panto_joban;
@@ -46,10 +41,6 @@ default: spriteset_403_back_panto_joban;
 switch(FEAT_TRAINS, SELF, sw_403_gfx_frontback_flipcheck_joban, vehicle_is_flipped){
  0: spriteset_403_front_joban;
  default: sw_403_gfx_pantocheck_joban;
-}
-switch(FEAT_TRAINS, PARENT, sw_403_gfx_frontback_joban, vehicle_is_reversed){
- 0: sw_403_gfx_frontback_flipcheck_joban;
- default: sw_415group_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantocheck_kyushu, position_in_vehid_chain){
  0: spriteset_403_back_kyushu;
@@ -59,35 +50,17 @@ switch(FEAT_TRAINS, SELF, sw_403_gfx_frontback_flipcheck_kyushu, vehicle_is_flip
  0: spriteset_403_front_kyushu;
  default: sw_403_gfx_pantocheck_kyushu;
 }
-switch(FEAT_TRAINS, PARENT, sw_403_gfx_frontback_kyushu, vehicle_is_reversed){
- 0: sw_403_gfx_frontback_flipcheck_kyushu;
- default: sw_415group_gfx_rev_idcheck;
-}
-/*---END OF SECTION---*/
-/*---GFX: Middle Car Switches---*/
-switch(FEAT_TRAINS, PARENT, sw_403_gfx_mucar_revcheck_mid_initial, vehicle_is_reversed){
- 0: sw_403_gfx_pantograph_pos_initial_sw1; //manual edit
- default: sw_415group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_403_gfx_mucar_revcheck_mid_joban, vehicle_is_reversed){
- 0: sw_403_gfx_pantograph_pos_joban_sw1; //manual edit
- default: sw_415group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_403_gfx_mucar_revcheck_mid_kyushu, vehicle_is_reversed){
- 0: sw_403_gfx_pantograph_pos_kyushu_sw1; //manual edit
- default: sw_415group_gfx_rev_idcheck;
-}
 /*---END OF SECTION---*/
 /*---GFX: Livery Refitting Switches---*/
 switch(FEAT_TRAINS, SELF, sw_403_gfx_mucar,  cargo_subtype) {
-0 : sw_403_gfx_mucar_revcheck_mid_initial;
-1 : sw_403_gfx_mucar_revcheck_mid_joban;
-2 : sw_403_gfx_mucar_revcheck_mid_kyushu;
+0 : sw_403_gfx_pantograph_pos_initial_sw1;
+1 : sw_403_gfx_pantograph_pos_joban_sw1;
+2 : sw_403_gfx_pantograph_pos_kyushu_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_main,  cargo_subtype) {
-0 : sw_403_gfx_frontback_initial;
-1 : sw_403_gfx_frontback_joban;
-2 : sw_403_gfx_frontback_kyushu;
+0 : sw_403_gfx_frontback_flipcheck_initial;
+1 : sw_403_gfx_frontback_flipcheck_joban;
+2 : sw_403_gfx_frontback_flipcheck_kyushu;
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/

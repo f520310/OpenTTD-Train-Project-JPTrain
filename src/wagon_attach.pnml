@@ -120,8 +120,6 @@
 #define ITEM_ISE2		0xF21
 #define ITEM_ISE3		0xF22
 
-
-
 switch(FEAT_TRAINS, PARENT, switch_can_attach_COM, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
 	RANGE_NMS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Allow
 	RANGE_MINOR: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Allow
