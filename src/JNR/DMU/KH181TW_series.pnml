@@ -107,7 +107,7 @@ item(FEAT_TRAINS, dmu_kiha181tw) {
     property {
         name:                         string(JNR_kiha181tw);
         introduction_date:            date(1968, 02, 01);
-        model_life:                   4;
+        model_life:                   204;
         vehicle_life:                 44;
         reliability_decay:            23;
 
