@@ -793,3 +793,7 @@ MUCAR_DESC  :{BLUE}Used to represent  {GREEN}motor and trailer cars{BLUE} within
 MUCAB_DESC  :{BLUE}Used to represent {GREEN}cab/control cars{BLUE} within an EMU formation. {}{RED}Must be the rear of an EMU consist, but can be placed within.
 MUCARDD_DESC  :{BLUE}Used to represent special cars, such as {GREEN}bilevel cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
 STR_TRA:{WHITE}Taiwan Rail
+TWR_dr2700:TWR DR2700 {WHITE}(DMU){BLACK}
+TWR_dr2800:TWR DR2800 {WHITE}(DMU){BLACK}
+TWR_dr2900:TWR DR2900 {WHITE}(DMU){BLACK}
+TWR_dr3100:TWR DR3100 {WHITE}(DMU){BLACK}
