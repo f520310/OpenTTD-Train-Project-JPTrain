@@ -165,6 +165,8 @@
 #include "src/JRK/EMU/811_series.pnml"
 #include "src/JRK/EMU/813_series.pnml"
 #include "src/JRK/EMU/787TB_series.pnml"
+#include "src/JRK/EMU/885_series.pnml"
+#include "src/JRK/EMU/883_series.pnml"
 
 
 //GRF OVERRIDE

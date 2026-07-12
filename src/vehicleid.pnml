@@ -29,6 +29,8 @@ item(FEAT_TRAINS, dmu_kiha181, 1522) {} //107emu 0x7E2
 item(FEAT_TRAINS, dmu_kiha181tw, 2100) {} //KiHa 181 TW
 item(FEAT_TRAINS, emu_rapit_b, 2105) {} //NANKAI Rapit B
 item(FEAT_TRAINS, emu_787tb, 2106) {} //JRK 787TB
+item(FEAT_TRAINS, emu_885, 2108) {} //JRK 885
+item(FEAT_TRAINS, emu_883, 2107) {} //JRK 883 Sonic
 item(FEAT_TRAINS, dmu_dr3100tw, 2104) {} //TWR DR3100
 item(FEAT_TRAINS, dmu_dr2900tw, 2103) {} //TWR DR2900
 item(FEAT_TRAINS, dmu_dr2800tw, 2102) {} //TWR DR2800

@@ -603,6 +603,8 @@ item(FEAT_TRAINS, dmu_kiha181, 1522) {} //107emu 0x7E2
 item(FEAT_TRAINS, dmu_kiha181tw, 2100) {} //KiHa 181 TW
 item(FEAT_TRAINS, emu_rapit_b, 2105) {} //NANKAI Rapit B
 item(FEAT_TRAINS, emu_787tb, 2106) {} //JRK 787TB
+item(FEAT_TRAINS, emu_885, 2108) {} //JRK 885
+item(FEAT_TRAINS, emu_883, 2107) {} //JRK 883 Sonic
 item(FEAT_TRAINS, dmu_dr3100tw, 2104) {} //TWR DR3100
 item(FEAT_TRAINS, dmu_dr2900tw, 2103) {} //TWR DR2900
 item(FEAT_TRAINS, dmu_dr2800tw, 2102) {} //TWR DR2800
@@ -767,6 +769,8 @@ dmu_kiha181,
 dmu_kiha181tw,
 emu_rapit_b,
 emu_787tb,
+emu_885,
+emu_883,
 dmu_dr3100tw,
 dmu_dr2900tw,
 dmu_dr2800tw,
@@ -24938,6 +24942,258 @@ item(FEAT_TRAINS, emu_787tb) {
         cargo_age_period:             param_decay_express;
         power:                        600;
         weight:                       42;
+    }
+}
+# 1 "JPplus.pnml" 4
+# 1 "src/JRK/EMU/885_series.pnml" 1
+/*--- JRK 885 Series ---*/
+/*--- MU CAR, refit: Kamome(KM) / Sonic(SN), 最短6節 ---*/
+
+/*---GFX: Spritesets---*/
+spriteset (spriteset_885_purchase, "gfx/JRW/emu207/purchase.png") { tmpl_purchase_dh(0, 0) }
+alternative_sprites(spriteset_885_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/purchase_32bpp.png") {tmpl_purchase_dh_32bpp(0, 0)}
+
+// Kamome
+spriteset (spriteset_885_front_km, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_front_km, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/cab_km.png") {tmpl_std(0, 1)}
+spriteset (spriteset_885_back_km, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_back_km, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/cab_km.png") {tmpl_std_rev(0, 26)}
+spriteset (spriteset_885_mid_km, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_mid_km, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/mid_km.png") {tmpl_std(0, 1)}
+spriteset (spriteset_885_mid_panto_km, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_mid_panto_km, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/mid_panto_km.png") {tmpl_std(0, 1)}
+
+// Sonic
+spriteset (spriteset_885_front_sn, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_front_sn, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/cab_sn.png") {tmpl_std(0, 1)}
+spriteset (spriteset_885_back_sn, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_back_sn, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/cab_sn.png") {tmpl_std_rev(0, 26)}
+spriteset (spriteset_885_mid_sn, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_mid_sn, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/mid_sn.png") {tmpl_std(0, 1)}
+spriteset (spriteset_885_mid_panto_sn, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_885_mid_panto_sn, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu885/mid_panto_sn.png") {tmpl_std(0, 1)}
+
+/*---GFX: Switches---*/
+// Kamome front/back
+switch(FEAT_TRAINS, SELF, sw_885_km_frontback, vehicle_is_flipped) {
+    0: spriteset_885_front_km;
+    default: spriteset_885_back_km;
+}
+// Sonic front/back
+switch(FEAT_TRAINS, SELF, sw_885_sn_frontback, vehicle_is_flipped) {
+    0: spriteset_885_front_sn;
+    default: spriteset_885_back_sn;
+}
+
+// Middle cars with panto
+switch(FEAT_TRAINS, SELF, sw_885_km_mid_panto, position_in_vehid_chain % 2) {
+    0: spriteset_885_mid_panto_km;
+    default: spriteset_885_mid_km;
+}
+switch(FEAT_TRAINS, SELF, sw_885_sn_mid_panto, position_in_vehid_chain % 2) {
+    0: spriteset_885_mid_panto_sn;
+    default: spriteset_885_mid_sn;
+}
+
+// MU CAR: last car = back, others = mid with panto logic
+switch(FEAT_TRAINS, SELF, sw_885_km_mucar, position_in_consist_from_end) {
+    0: spriteset_885_back_km;
+    default: sw_885_km_mid_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_885_sn_mucar, position_in_consist_from_end) {
+    0: spriteset_885_back_sn;
+    default: sw_885_sn_mid_panto;
+}
+
+// Refit main switch
+switch(FEAT_TRAINS, SELF, sw_885_gfx_main, cargo_subtype) {
+    0: sw_885_km_frontback;
+    1: sw_885_sn_frontback;
+}
+
+// Refit MU CAR switch
+switch(FEAT_TRAINS, SELF, sw_885_gfx_mucar, cargo_subtype) {
+    0: sw_885_km_mucar;
+    1: sw_885_sn_mucar;
+}
+
+switch(FEAT_TRAINS, SELF, sw_885_subtypetext, cargo_subtype) {
+    0: string(LV_885_KAMOME);
+    1: string(LV_885_SONIC);
+}
+
+switch(FEAT_TRAINS, PARENT, sw_885_startstop, num_vehs_in_consist < 6) {
+    1: return string(STR_STARTSTOP_TOOSHORT);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_885_attach, [vehicle_type_id == mu_car]) {
+    0: return string(MU_UNIQUE);
+}
+
+item(FEAT_TRAINS, emu_885) {
+    property {
+        name:                         string(JRK_885);
+        introduction_date:            date(2000, 03, 01);
+        model_life:                   204;
+        vehicle_life:                 40;
+        reliability_decay:            20;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
+        cost_factor:                  45;
+        running_cost_factor:          65;
+        speed:                        130 km/h;
+        track_type:                   TR_1067_AC;
+        power:                        760 kW;
+        weight:                       40 ton;
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+        tractive_effort_coefficient:  0.3;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length:                       8;
+    }
+    graphics {
+        default:                      sw_885_gfx_main;
+        purchase:                     spriteset_885_purchase;
+        additional_text:
+            string(STR_TRAIN_DESC,
+            string(STR_NARROWGAUGE),
+            string(STR_DENKI),
+            string(STR_LOAD_SPEED, string(STR_DOORS, 1)),
+            string(STR_USAGE,string(STR_USE_LTDEXPRESS)),
+            string(STR_OPERATOR,string(STR_JRK)));
+        cargo_subtype_text:           sw_885_subtypetext;
+        can_attach_wagon:             sw_885_attach;
+        start_stop:                   sw_885_startstop;
+    }
+    livery_override(mu_car) {
+        default:                      sw_885_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
+        cargo_subtype_text:           sw_885_subtypetext;
+        power:                        760;
+        weight:                       38;
+    }
+}
+# 1 "JPplus.pnml" 4
+# 1 "src/JRK/EMU/883_series.pnml" 1
+/*--- JRK 883 Series Sonic ---*/
+/*--- MU CAR 方式，最短4節，集電弓每隔2節 ---*/
+
+/*---GFX: Spritesets---*/
+spriteset (spriteset_883_purchase, "gfx/JRW/emu207/purchase.png") { tmpl_purchase_dh(0, 0) }
+alternative_sprites(spriteset_883_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/purchase_32bpp.png") {tmpl_purchase_dh_32bpp(0, 0)}
+
+spriteset (spriteset_883_front, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std(0, 1)}
+
+spriteset (spriteset_883_back, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std_rev(0, 26)}
+
+spriteset (spriteset_883_mid, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid.png") {tmpl_std(0, 1)}
+
+spriteset (spriteset_883_mid_panto, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid_panto.png") {tmpl_std(0, 1)}
+
+/*---GFX: Switches---*/
+switch(FEAT_TRAINS, SELF, sw_883_gfx_frontback, vehicle_is_flipped) {
+    0: spriteset_883_front;
+    default: spriteset_883_back;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_mid_panto, position_in_vehid_chain % 2) {
+    0: spriteset_883_mid_panto;
+    default: spriteset_883_mid;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_mucar, position_in_consist_from_end) {
+    0: spriteset_883_back;
+    default: sw_883_gfx_mid_panto;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_main, cargo_subtype) {
+    0: sw_883_gfx_frontback;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_subtypetext, cargo_subtype) {
+    0: string(LV_883_BLUE);
+}
+
+switch(FEAT_TRAINS, PARENT, sw_883_startstop, num_vehs_in_consist < 4) {
+    1: return string(STR_STARTSTOP_TOOSHORT);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_attach, [vehicle_type_id == mu_car]) {
+    0: return string(MU_UNIQUE);
+}
+
+item(FEAT_TRAINS, emu_883) {
+    property {
+        name:                         string(JRK_883);
+        introduction_date:            date(1994, 01, 01);
+        model_life:                   204;
+        vehicle_life:                 40;
+        reliability_decay:            20;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
+        cost_factor:                  40;
+        running_cost_factor:          60;
+        speed:                        130 km/h;
+        track_type:                   TR_1067_AC;
+        power:                        760 kW;
+        weight:                       40 ton;
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+        tractive_effort_coefficient:  0.3;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length:                       8;
+    }
+    graphics {
+        default:                      sw_883_gfx_main;
+        purchase:                     spriteset_883_purchase;
+        additional_text:
+            string(STR_TRAIN_DESC,
+            string(STR_NARROWGAUGE),
+            string(STR_DENKI),
+            string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+            string(STR_USAGE,string(STR_USE_LTDEXPRESS)),
+            string(STR_OPERATOR,string(STR_JRK)));
+        cargo_subtype_text:           sw_883_subtypetext;
+        can_attach_wagon:             sw_883_attach;
+        start_stop:                   sw_883_startstop;
+    }
+    livery_override(mu_car) {
+        default:                      sw_883_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
+        power:                        760;
+        weight:                       38;
     }
 }
 # 1 "JPplus.pnml" 4

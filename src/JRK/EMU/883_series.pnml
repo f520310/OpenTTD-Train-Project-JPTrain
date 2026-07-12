@@ -1,0 +1,107 @@
+/*--- JRK 883 Series Sonic ---*/
+/*--- MU CAR 方式，最短4節，集電弓每隔2節 ---*/
+
+/*---GFX: Spritesets---*/
+spriteset (spriteset_883_purchase, "gfx/JRW/emu207/purchase.png") { tmpl_purchase_dh(0, 0) }
+alternative_sprites(spriteset_883_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/purchase_32bpp.png") {tmpl_purchase_dh_32bpp(0, 0)}
+
+spriteset (spriteset_883_front, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std(0, 1)}
+
+spriteset (spriteset_883_back, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std_rev(0, 26)}
+
+spriteset (spriteset_883_mid, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid.png") {tmpl_std(0, 1)}
+
+spriteset (spriteset_883_mid_panto, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid_panto.png") {tmpl_std(0, 1)}
+
+/*---GFX: Switches---*/
+switch(FEAT_TRAINS, SELF, sw_883_gfx_frontback, vehicle_is_flipped) {
+    0: spriteset_883_front;
+    default: spriteset_883_back;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_mid_panto, position_in_vehid_chain % 2) {
+    0: spriteset_883_mid_panto;
+    default: spriteset_883_mid;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_mucar, position_in_consist_from_end) {
+    0: spriteset_883_back;
+    default: sw_883_gfx_mid_panto;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_main, cargo_subtype) {
+    0: sw_883_gfx_frontback;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_subtypetext, cargo_subtype) {
+    0: string(LV_883_BLUE);
+}
+
+switch(FEAT_TRAINS, PARENT, sw_883_startstop, num_vehs_in_consist < 4) {
+    1: return string(STR_STARTSTOP_TOOSHORT);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_attach, [vehicle_type_id == mu_car]) {
+    0: return string(MU_UNIQUE);
+}
+
+item(FEAT_TRAINS, emu_883) {
+    property {
+        name:                         string(JRK_883);
+        introduction_date:            date(1994, 01, 01);
+        model_life:                   204;
+        vehicle_life:                 40;
+        reliability_decay:            20;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
+        cost_factor:                  40;
+        running_cost_factor:          60;
+        speed:                        130 km/h;
+        track_type:                   TR_1067_AC;
+        power:                        760 kW;
+        weight:                       40 ton;
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+        tractive_effort_coefficient:  0.3;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length:                       8;
+    }
+    graphics {
+        default:                      sw_883_gfx_main;
+        purchase:                     spriteset_883_purchase;
+        additional_text:
+            string(STR_TRAIN_DESC,
+            string(STR_NARROWGAUGE),
+            string(STR_DENKI),
+            string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+            string(STR_USAGE,string(STR_USE_LTDEXPRESS)),
+            string(STR_OPERATOR,string(STR_JRK)));
+        cargo_subtype_text:           sw_883_subtypetext;
+        can_attach_wagon:             sw_883_attach;
+        start_stop:                   sw_883_startstop;
+    }
+    livery_override(mu_car) {
+        default:                      sw_883_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
+        power:                        760;
+        weight:                       38;
+    }
+}
