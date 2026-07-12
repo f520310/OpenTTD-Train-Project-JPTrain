@@ -24821,13 +24821,13 @@ item(FEAT_TRAINS, emu_813) {
 spriteset (spriteset_787TB_purchase, "gfx/OTHER/mucar.png") { tmpl_purchase(0, 0) }
 alternative_sprites(spriteset_787TB_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/purchase_32bpp.png") {tmpl_purchase_32bpp(0, 0)}
 
-//Front cab (row 0, REVERSED direction)
+//Front cab (row 0) - 試用 NORMAL direction
 spriteset (spriteset_787TB_front, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 alternative_sprites(spriteset_787TB_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/cab.png") {tmpl_std(0, 1)}
 
-//Back cab (row 5, NORMAL direction)
+//Back cab (row 5)
 spriteset (spriteset_787TB_back, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
-alternative_sprites(spriteset_787TB_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/cab.png") {tmpl_std(0, 26)}
+alternative_sprites(spriteset_787TB_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/cab.png") {tmpl_std_rev(0, 26)}
 
 //Middle car (no panto)
 spriteset (spriteset_787TB_mid, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
@@ -24838,16 +24838,22 @@ spriteset (spriteset_787TB_mid_panto, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 alternative_sprites(spriteset_787TB_mid_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/mid_panto.png") {tmpl_std(0, 1)}
 
 /*---GFX: Graphics Switches---*/
-// Front/back based on position
+// Front cab graphics
 switch(FEAT_TRAINS, SELF, sw_787TB_gfx_frontback, vehicle_is_flipped) {
     0: spriteset_787TB_front;
     default: spriteset_787TB_back;
 }
 
-// Middle cars: panto every 2 cars (position 1,3,5,7... in mu_car chain)
-switch(FEAT_TRAINS, SELF, sw_787TB_gfx_mid, position_in_vehid_chain % 2) {
+// Middle cars: last car = back cab, otherwise panto every 2 cars
+switch(FEAT_TRAINS, SELF, sw_787TB_gfx_mid_panto, position_in_vehid_chain % 2) {
     0: spriteset_787TB_mid_panto;
     default: spriteset_787TB_mid;
+}
+
+// Check if this MU CAR is the last one in the consist → show back cab
+switch(FEAT_TRAINS, SELF, sw_787TB_gfx_mucar, position_in_consist_from_end) {
+    0: spriteset_787TB_back;
+    default: sw_787TB_gfx_mid_panto;
 }
 
 /*---GFX: Main switch---*/
@@ -24860,7 +24866,7 @@ switch(FEAT_TRAINS, SELF, sw_787TB_subtypetext, cargo_subtype) {
     0: string(LV_JRK_TSUBAME);
 }
 
-// Start/stop check (minimum 6 cars)
+// Start/stop check (minimum 6 cars total including engine)
 switch(FEAT_TRAINS, PARENT, sw_787TB_startstop, num_vehs_in_consist < 6) {
     1: return string(STR_STARTSTOP_TOOSHORT);
     return CB_RESULT_NO_TEXT;
@@ -24926,7 +24932,7 @@ item(FEAT_TRAINS, emu_787tb) {
         start_stop:                   sw_787TB_startstop;
     }
     livery_override(mu_car) {
-        default:                      sw_787TB_gfx_mid;
+        default:                      sw_787TB_gfx_mucar;
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
         cargo_age_period:             param_decay_express;
