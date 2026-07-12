@@ -1,44 +1,81 @@
 /*--- JRK 883 Series Sonic ---*/
-/*--- MU CAR 方式，最短4節，集電弓每隔2節 ---*/
+/*--- MU CAR, 最短4節, refit: Blue/Black/Silver/Yellow ---*/
 
 /*---GFX: Spritesets---*/
 spriteset (spriteset_883_purchase, "gfx/JRW/emu207/purchase.png") { tmpl_purchase_dh(0, 0) }
 alternative_sprites(spriteset_883_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/purchase_32bpp.png") {tmpl_purchase_dh_32bpp(0, 0)}
 
-spriteset (spriteset_883_front, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
-alternative_sprites(spriteset_883_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std(0, 1)}
+// Blue Sonic (from 883.PNG)
+spriteset (spriteset_883_front_blue, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_front_blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std(0, 1)}
+spriteset (spriteset_883_back_blue, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_back_blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std_rev(0, 26)}
+spriteset (spriteset_883_mid_blue, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid_blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid.png") {tmpl_std(0, 1)}
+spriteset (spriteset_883_mid_panto_blue, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid_panto_blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid_panto.png") {tmpl_std(0, 1)}
 
-spriteset (spriteset_883_back, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
-alternative_sprites(spriteset_883_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab.png") {tmpl_std_rev(0, 26)}
+// Black Sonic
+spriteset (spriteset_883_front_black, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_front_black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab_black.png") {tmpl_std(0, 1)}
+spriteset (spriteset_883_back_black, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_back_black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab_black.png") {tmpl_std_rev(0, 26)}
 
-spriteset (spriteset_883_mid, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
-alternative_sprites(spriteset_883_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid.png") {tmpl_std(0, 1)}
+// Silver Sonic
+spriteset (spriteset_883_front_silver, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_front_silver, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab_silver.png") {tmpl_std(0, 1)}
+spriteset (spriteset_883_back_silver, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_back_silver, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab_silver.png") {tmpl_std_rev(0, 26)}
 
-spriteset (spriteset_883_mid_panto, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
-alternative_sprites(spriteset_883_mid_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid_panto.png") {tmpl_std(0, 1)}
+// Yellow Sonic
+spriteset (spriteset_883_front_yellow, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_front_yellow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab_yellow.png") {tmpl_std(0, 1)}
+spriteset (spriteset_883_back_yellow, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_back_yellow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/cab_yellow.png") {tmpl_std_rev(0, 26)}
+
+// Shared middle (from 883-5)
+spriteset (spriteset_883_mid_5, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid_5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid_5.png") {tmpl_std(0, 1)}
+spriteset (spriteset_883_mid_panto_5, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+alternative_sprites(spriteset_883_mid_panto_5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu883/mid_panto_5.png") {tmpl_std(0, 1)}
 
 /*---GFX: Switches---*/
-switch(FEAT_TRAINS, SELF, sw_883_gfx_frontback, vehicle_is_flipped) {
-    0: spriteset_883_front;
-    default: spriteset_883_back;
-}
+// Front/back by livery
+switch(FEAT_TRAINS, SELF, sw_883_blue_fb, vehicle_is_flipped) { 0: spriteset_883_front_blue; default: spriteset_883_back_blue; }
+switch(FEAT_TRAINS, SELF, sw_883_black_fb, vehicle_is_flipped) { 0: spriteset_883_front_black; default: spriteset_883_back_black; }
+switch(FEAT_TRAINS, SELF, sw_883_silver_fb, vehicle_is_flipped) { 0: spriteset_883_front_silver; default: spriteset_883_back_silver; }
+switch(FEAT_TRAINS, SELF, sw_883_yellow_fb, vehicle_is_flipped) { 0: spriteset_883_front_yellow; default: spriteset_883_back_yellow; }
 
-switch(FEAT_TRAINS, SELF, sw_883_gfx_mid_panto, position_in_vehid_chain % 2) {
-    0: spriteset_883_mid_panto;
-    default: spriteset_883_mid;
-}
+// Mid panto by livery
+switch(FEAT_TRAINS, SELF, sw_883_blue_mid, position_in_vehid_chain % 2) { 0: spriteset_883_mid_panto_blue; default: spriteset_883_mid_blue; }
+switch(FEAT_TRAINS, SELF, sw_883_other_mid, position_in_vehid_chain % 2) { 0: spriteset_883_mid_panto_5; default: spriteset_883_mid_5; }
 
-switch(FEAT_TRAINS, SELF, sw_883_gfx_mucar, position_in_consist_from_end) {
-    0: spriteset_883_back;
-    default: sw_883_gfx_mid_panto;
-}
+// MU CAR: last = back, others = mid
+switch(FEAT_TRAINS, SELF, sw_883_blue_mucar, position_in_consist_from_end) { 0: spriteset_883_back_blue; default: sw_883_blue_mid; }
+switch(FEAT_TRAINS, SELF, sw_883_black_mucar, position_in_consist_from_end) { 0: spriteset_883_back_black; default: sw_883_other_mid; }
+switch(FEAT_TRAINS, SELF, sw_883_silver_mucar, position_in_consist_from_end) { 0: spriteset_883_back_silver; default: sw_883_other_mid; }
+switch(FEAT_TRAINS, SELF, sw_883_yellow_mucar, position_in_consist_from_end) { 0: spriteset_883_back_yellow; default: sw_883_other_mid; }
 
+// Refit main
 switch(FEAT_TRAINS, SELF, sw_883_gfx_main, cargo_subtype) {
-    0: sw_883_gfx_frontback;
+    0: sw_883_blue_fb;
+    1: sw_883_black_fb;
+    2: sw_883_silver_fb;
+    3: sw_883_yellow_fb;
+}
+
+switch(FEAT_TRAINS, SELF, sw_883_gfx_mucar, cargo_subtype) {
+    0: sw_883_blue_mucar;
+    1: sw_883_black_mucar;
+    2: sw_883_silver_mucar;
+    3: sw_883_yellow_mucar;
 }
 
 switch(FEAT_TRAINS, SELF, sw_883_subtypetext, cargo_subtype) {
     0: string(LV_883_BLUE);
+    1: string(LV_883_BLACK);
+    2: string(LV_883_SILVER);
+    3: string(LV_883_YELLOW);
 }
 
 switch(FEAT_TRAINS, PARENT, sw_883_startstop, num_vehs_in_consist < 4) {
@@ -101,6 +138,7 @@ item(FEAT_TRAINS, emu_883) {
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
         cargo_age_period:             param_decay_express;
+        cargo_subtype_text:           sw_883_subtypetext;
         power:                        760;
         weight:                       38;
     }
