@@ -24818,8 +24818,8 @@ item(FEAT_TRAINS, emu_813) {
 
 /*---GFX: Spritesets---*/
 //Purchase
-spriteset (spriteset_787TB_purchase, "gfx/OTHER/mucar.png") { tmpl_purchase(0, 0) }
-alternative_sprites(spriteset_787TB_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/purchase_32bpp.png") {tmpl_purchase_32bpp(0, 0)}
+spriteset (spriteset_787TB_purchase, "gfx/JRW/emu207/purchase.png") { tmpl_purchase_dh(0, 0) }
+alternative_sprites(spriteset_787TB_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRK/emu787TB/purchase_32bpp.png") {tmpl_purchase_dh_32bpp(0, 0)}
 
 //Front cab (row 0) - 試用 NORMAL direction
 spriteset (spriteset_787TB_front, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
